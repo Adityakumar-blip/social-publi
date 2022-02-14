@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.section-header{
+    z-index: -10;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 550;
+    position: relative;
+    text-transform: capitalize;
+    font-family:'Lora', sans-serif;
+
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+    font-family:'Poppins', sans-serif;
+}
+
+#clients {
+    padding: 60px 0;
+}
+
+#clients .clients-wrap {
+    border-top: 1px solid #d6eaff;
+    border-left: 1px solid #d6eaff;
+    margin-bottom: 30px
+}
+
+#clients .client-logo {
+    padding: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: 1px solid #d6eaff;
+    border-bottom: 1px solid #d6eaff;
+    overflow: hidden;
+    background: #fff;
+    height: 160px
+}
+
+#clients img {
+    transition: all 0.4s ease-in-out
+}
+
+.client1{
+    width:100%;
+}
+
+.client-logo img:hover{
+    transform: translateY(-10px);
+}

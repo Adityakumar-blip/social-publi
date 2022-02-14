@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tools-container{
+    height: 50vh;
+    background-color: rgb(189, 223, 220);
+}
+
+.tools-body{
+    margin-top: 5.5rem;
+}
+.tools-body h2{
+    text-align: center;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-family: 'Lora', sans-serif;
+    font-size: 40px;
+}
+
+.tools-body p{
+    margin-left: 4rem;
+    font-weight: 400;
+     
+    font-family:'Poppins', sans-serif;
+}
+
+.tools-body h1{
+    text-align: center;
+    color: rgb(18, 19, 19);
+    margin-top: 3rem;
+    margin-right: 1rem;
+    font-size: 50px;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+
+
+.heading-body h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 3rem;
+    font-family: 'Lora', sans-serif;
+    font-size: 40px;
+}
+
+.heading-title{
+    margin-top: 3rem;
+}
+
+.slogan-body{
+    margin-top: 3rem;
+    text-align: center;
+    text-align: left;
+    margin-left: 12rem;
+    height: 60vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+.slogan-img img{
+    width: 60%;
+    height: 65%;
+    margin-top: 3.5rem;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.power-body{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.power-body h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.card{
+    border-radius: 10px;
+    height:100%;
+}
+
+.card-container{
+    margin-top:3rem;
+}
+
+.power-card{
+    margin: 20px;
+    width: 22rem;
+    border-radius: 10px;
+    margin-left: 2.5rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+}
+
+.power-card:hover{
+    transform:translateY(-20px);
+    animation: ease-out;
+}
+
+.card img{
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.card-body h5{
+    font-family:'Lora', sans-serif;
+    font-size: 22px;
+    font-weight:300;
+}
+
+.card-text{
+    font-family:'Poppins', sans-serif;
+    font-size:14px;
+    color:#222;
+}
+
+.button{
+    font-size:15px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    color:#222;
+    border:2px solid #000;
+    font-weight: 550;
+}
+
+.button:hover{
+    background-color: #222;
+    color: aliceblue;
+    border: 0px;
+}
+

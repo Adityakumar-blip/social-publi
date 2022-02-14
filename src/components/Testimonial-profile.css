@@ -1,0 +1,174 @@
+
+
+.influencer-image-container{
+    width: 100%;
+   
+    position: relative;
+}
+
+.influencer-image-container>img{
+    width: 100%;
+    height: 50rem;
+}
+.influencer-image-container>h4{
+    position: absolute;
+    left: 5rem;
+    bottom:15rem;
+    color: white;
+}
+
+.influencer-image-container>i{
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    color: white;
+}
+
+.influencer-about{
+    display: flex;
+    position: relative;
+}
+
+.influencer-about>.text{
+    width: 60%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42, 42, 42);
+    font-family: 'poppins';
+    padding-top: 3rem;
+    padding-left: 5rem;
+}
+
+.influencer-about>.small-pic{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    padding-bottom: 1rem;
+   
+}
+.influencer-about>.small-pic>img{
+    width:75%;
+     
+}
+
+.goal-and-strategy{
+    width:80%;
+   
+     margin : 5rem 10%;
+   
+    display: flex;
+    
+}
+.goal-and-strategy >div{
+    width: 33.333%;
+}
+
+.goal>li{
+    padding : 0 1.5rem;
+    font-family: 'poppins';
+    color: rgb(37, 37, 37);
+    font-size:90%;
+}
+.strategy>li{
+    padding : 0 1.5rem;
+    font-family: 'poppins';
+    color: rgb(37, 37, 37);
+    font-size:90%;
+}
+
+ .services-link{
+     display: grid;
+     height: 20%;
+     margin: 1rem 0 1rem;
+ }
+
+ .services-link>a{
+    text-decoration: none;
+    color: rgb(58, 58, 252);
+    font-family: 'poppins';
+    font-size: large;
+    padding: 0.5rem;
+
+ }
+
+ .services-link>a:hover{
+     color: black;
+ }
+
+ .influencer-images{
+     display: flex;
+     width: 100%;
+ }
+
+ .influencer-images>div{
+     width: calc( 100% /3 );
+ }
+ .influencer-images>div>img{
+    width:  100% ;
+    height: 18rem;
+}
+
+.influencer-GraphData-wrapper{
+   
+    width: 100%;
+   background-color: rgb(247,247,247);
+    padding: 0;
+    margin: 0;
+}
+
+ 
+
+.influencer-GraphData-wrapper>div>h1{
+     padding: 5rem;
+     font-family: 'poppins';
+
+}
+
+ .graph{
+    background-color: black;
+    color: rgb(228, 227, 227);
+    padding: 3rem 0 0 3rem;
+}
+.graph>div{
+    padding: 1rem 0;
+}
+.graph>div>h1{
+    padding: 1rem 0;
+    font-family: 'poppins';
+    font-size:350%;
+}
+
+.graph>div>p{
+    color: rgb(31, 77, 231);
+    font-family: 'poppins';
+
+}
+
+.next-prev-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.next{
+  width: 50%;
+  height: 25rem;  
+  
+}
+
+.prev{
+  width:50%;
+  height: 25rem;
+}
+.next>img{
+    width: 100%;
+    height: 25rem;
+  }
+  
+  .prev>img{
+    width:100%;
+    height: 25rem;
+  }

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about-service{
+    margin: 0;
+    width: 100%;
+     margin: 5rem 0;
+    display: flex;
+}
+
+.service{
+     margin: 0;
+     width: 50%;
+      
+      padding: 4rem;
+      display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+ .service-text{
+    padding: 1rem 4rem 1rem 1rem;
+ }
+
+ .lets-work{
+     padding:1rem 0;
+     
+      
+ }
+
+ .service-container{
+     width: 100%;
+ }
+
+.service-container div{
+   
+    display: flex;
+     width: 100%;
+     height: 300px;
+}
+
+.service-section{
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 10rem;
+   text-align: center;
+   font-style: italic;
+ 
+}
+.service-section>h1{
+    font-weight: bolder;
+}
+
+.service-section:hover{
+    background-color:#0E7895 ;
+}
+
+.black{
+    background-color: black;
+}
+
+.grey{
+    background-color: grey;
+}
+
+.middle{
+    color: black;
+}
+.brands-container{
+    width: 100%;
+    height: 28rem;
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+.nav-wrapper{
+    background-color: white;
+    overflow: hidden;
+}
+
+.navbar li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Lora',sans-serif;
+}
+
+.navbar li a:hover{
+    color: #1c6dd0;
+}
+
+.navbar-brand img{
+    width: 200px;
+    height: 80px;
+    margin-left:30px;
+}
+
+.contact-button{
+    margin-left: 2rem;
+    width: 9rem;
+    border: 0.5px solid #14abd4;
+    border-radius:40px;
+    background-color: #14abd4;
+    color: #fff;
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width:990px){
+
+    .navbar-brand{
+        font-size: 30px;
+    }
+
+    .main-heading{
+        font-size: 2rem;
+
+    }
+
+    .main-para{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px){
+    .navbar-brand{
+        font-size: 20px;
+    }
+}
