@@ -14,6 +14,7 @@ const Home = () => {
   return (
     <>
     {/* asdfg */}
+    {/* we're succesful */}
     <section className='landing-page'>
       <header>
       <div className="col-12 col-s-12 video-container">
