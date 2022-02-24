@@ -54,3 +54,25 @@
      font-size: small;
   }
    
+  @media (max-width:600px){
+
+    .footer-wrapper>h1{
+      margin: 0;
+      padding: 1rem ;
+
+    }
+
+    .Links{
+      display: flex;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .link{
+      padding: 1rem 1rem;
+      font-size: 10px;
+      color: #fff;
+   
+    }
+  }

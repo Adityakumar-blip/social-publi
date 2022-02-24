@@ -7,14 +7,14 @@ export default class Footer extends Component {
        <div className="footer-wrapper">
            <h1>India's Number one Influncer Marketing Plateform.</h1>
            <div className="column-wrapper row">
-           <div className='column col-4'>
+           <div className='column col-lg-4 col-sm-12'>
                <a  href=""><h1  >SocialPubli</h1></a>
                <a href="">Home</a>
                <a href="">Influencer</a>
                <a href="">Brand</a>
                <a href="">Our Work</a>
            </div>
-           <div className='  col-8 Links' > 
+           <div className='  col-lg-8 col-sm-12 Links' > 
            <a className='link '  href=""><i class="fab fa-instagram fa-4x" ></i></a>
            <a className='link ' href=""> <i class="fab fa-facebook fa-4x" ></i></a>
            <a className='link ' href=""> <i class="fab fa-twitter fa-4x" ></i></a>
