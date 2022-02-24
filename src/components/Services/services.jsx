@@ -5,6 +5,7 @@ export default class influencer extends Component {
   render() {
     return (
       <>
+      <div className="service-wrapper">
         <div className="about-service">
           <div className="service service-heading ">
             <h1 style={{ fontWeight: "bolder", color: "black" }}>
@@ -85,6 +86,7 @@ export default class influencer extends Component {
     <span className="carousel-control-next-icon" aria-hidden="true" />
     <span className="visually-hidden">Next</span>
   </button>
+</div>
 </div>
 </div>
       </>

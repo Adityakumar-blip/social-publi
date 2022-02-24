@@ -6,6 +6,7 @@ import { RestData, workData } from "./workData";
 function TestimonialCol(props) {
   return (
     <>
+    <div className='influencer-wrapper'>
       {props.Id % 2 === 0 ? (
         <div id="1" className="testimonial-row brighten">
           <div id="0" className="testimonial-col">
@@ -75,6 +76,7 @@ function TestimonialCol(props) {
           </div>
         </div>
       )}
+    </div>  
     </>
   );
 }

@@ -15,27 +15,33 @@ const Newsletter = () => {
   return (
     <>
     <section>
-        <div className='row'>
-        <div className="card">
-            <div className="row g-0">
-            <div className="col-md-6">
-                <img src={news} class="img-fluid rounded-start" alt="..."/>
-            </div>
-        <div className="col-md-6">
-            <div className="card-body">
-                <h2 className="card-title">Ready to Hear from us..</h2>
-                <h4>One Newsletter for daily updates of the market <br/>trends and growing Influencers</h4>
-                <div className="newsletter">
-                  <form className='news-email' onSubmit={submitHandler}>
-                      <input type='email' placeholder='enter your email'  onChange={inputhandler} />
-                      <button type='submit'>Subscribe</button>
-                  </form>
+        <div className='newsletter-wrapper'> 
+    <div className='row'>
+          <div className='news-container'>
+            <div className='row g-0'>
+              <div className='col-md-6'>
+                <div className='news-body'>
+                <img src={news} alt="newsletter" />
                 </div>
+              </div>
+              <div className='col-md-6'>
+                <div className='news-body'>
+                <h1>Ready to Join us?</h1>
+                <p>Subscribe to our newsletter for free tips and other usefull</p>
+                <div className="news-form">
+                <form  class="flex-form">
+                <label for="from">
+                <i class="ion-location"></i>
+                </label>
+                <input type="email" placeholder="Enter Your Email"/>
+                <input type="submit" value="Subscribe"/>
+               </form>
+                </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-
         </div>
     </section>
     </>

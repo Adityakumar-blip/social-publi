@@ -3,57 +3,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 
-
-body{
-    z-index: -10;
+.newsletter-wrapper{
+    padding:5rem;
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );;
 }
 
-.card{
-    background-color: rgb(154, 219, 198);
+.news-body img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
 }
 
-.card img{
-    width:100%;
-    height: 100%;
-    border-radius: 0%;
-
-}
-
-.card-body h2 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 50px;
+.news-body h1{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 4rem;
     text-align: center;
+    margin-top:4rem;
 }
 
-.card-body h4{
-    text-align: center;
-    
-}
-
-.news-email{
-    display:flex;
-    align-items:center;
-    height: 5rem;
-    width: 60%;
-    align-items: center;
-    margin-left: 8rem;
-    margin-top: 4rem;
-}
-
-.news-email input{
-    margin-left: 5px;
-    padding-left: 15px;
-    padding: 10px;
-    border-radius: 0px;
-}
-
-.news-email button{
-    padding: 7px;
-    border: 1px solid #222;
-    padding-left: 10px;
-    color: black;
-    background-color: #fff;
-    font-size: 20px;
+.news-body p{
+    text-align:center;
+    font-size:1.1rem;
     font-family:'Poppins', sans-serif;
-    font-weight: 550;
+    font-weight:500
 }
+
+.flex-form input[type="submit"] {
+    background: #ef3f5a;
+    border: 1px solid #ef3f5a;
+    color: #fff;
+    cursor: pointer;
+    width: 15rem;
+  }
+  
+  .flex-form input[type="submit"]:hover {
+    background: #d73851;
+    border: 1px solid #d73851;
+  }
+  
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    z-index: 10;
+    position: relative;
+    width: 500px;
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+    margin-left: 3rem;
+    margin-top: 4rem;
+  }
+  
+  .flex-form > * {
+    border: 0;
+    padding: 0 0 0 10px;
+    background: #fff;
+    line-height: 50px;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+  }
+  
+  input[type="search"] {
+    flex-basis: 500px;
+  }

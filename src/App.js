@@ -12,6 +12,7 @@ import ContactUs from './components/contactUs';
 import { BrowserRouter as Router,Routes ,Switch ,Route, BrowserRouter } from 'react-router-dom';
 import LetsTalk from './components/LetsTalk';
 import About from './components/About/About.js';
+import Influencerpage from './components/Influencerpage/Influencerpage'
 function App() {  
   return (
     <>
@@ -27,6 +28,8 @@ function App() {
             <Route path='/tools' element={<Tools/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/influencer/testimonial' element={<TestimonialProfile/>}/>
+            <Route path='/influencerpage' element={<Influencerpage/>}/>
+
             </Routes>
         <LetsTalk/>
         <Footer/>

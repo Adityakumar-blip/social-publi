@@ -15,9 +15,9 @@ const Navbar = () =>{
             <div className='row'>
         <nav className=" navbar nav-container navbar-expand-lg navbar-light  ">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                 <img src={brand} alt=".."/>
-                </a>
+                </Link>
                     <button className="navbar-toggler" 
                     type="button" 
                     data-bs-toggle="collapse" 
@@ -37,7 +37,12 @@ const Navbar = () =>{
                         to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link active" to="/influencer">Influencers</Link>
+                        <Link className="nav-link active" to="/services">Services</Link>
+                        </li>
+
+
+                        <li className="nav-item">
+                        <Link className="nav-link active" to="/influencer">Work</Link>
                         </li>
 
                         
@@ -48,11 +53,6 @@ const Navbar = () =>{
                         
                         <li className="nav-item">
                         <Link className="nav-link active" to="/tools" >Tools</Link>
-                        </li>
-
-                        
-                        <li className="nav-item">
-                        <Link className="nav-link active" to="/services">Our Work</Link>
                         </li>
 
                         <li className="nav-item">

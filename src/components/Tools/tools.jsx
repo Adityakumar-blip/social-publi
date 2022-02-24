@@ -12,6 +12,7 @@ export default class tools extends Component {
     return (
       <>
       <section>
+        <div className='tools-wrapper'>
         <div className='row'>
           <div className='tools-container'>
             <div className='row g-0'>
@@ -99,6 +100,7 @@ export default class tools extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
       </>

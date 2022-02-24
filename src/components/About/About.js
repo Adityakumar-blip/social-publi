@@ -9,6 +9,7 @@ import about3 from '../image/about3.jpg'
 const About = () => {
   return (
     <section>
+      <div className='about-wraapper'>
         <div className="about-heading">
             <h2>The SocialPubli's Secret</h2>
             <p>we're telling you our story.</p>
@@ -94,6 +95,7 @@ const About = () => {
             </div>
           </div>
         </div>
+    </div>    
 
 
     </section>
