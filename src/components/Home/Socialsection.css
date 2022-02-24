@@ -32,3 +32,19 @@
     height: 100%;
     width: 100%;
 }
+
+@media (max-width:600px){
+    .social-body h2{
+        
+       line-height: 1.7;
+       
+        font-family: 'Lora', sans-serif;
+        margin: 0;
+        padding :2rem 3rem;
+        color: aliceblue;
+        font-size: 1.9rem;
+    }
+    .img-container{
+        height: 35rem;
+    }
+}

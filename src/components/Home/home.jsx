@@ -17,9 +17,7 @@ const Home = () => {
     <section className='landing-page'>
       <header>
       <div className=" video-container">
-        <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
-            </video>
-            <div className="main-heading-wrapper">
+      <div className="main-heading-wrapper">
             <h1 className="main-heading slide">Influencer Marketing<br/> 
             <span>Done Right</span></h1>
             <p className="main-para slide">As an Influencer Marketing Agency, we create the most viral,<br/> 
@@ -28,6 +26,9 @@ const Home = () => {
             <Link className='nav-link' to='/influencerpage'>I'm influencer</Link>
             </button>
             </div>
+        <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
+            </video>
+           
           </div>
       </header>
     </section>

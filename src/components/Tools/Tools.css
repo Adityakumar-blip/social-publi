@@ -11,7 +11,9 @@
 .tools-wrapper{
     animation: transitionIn 0.8s;
 }
-
+.tools-wrapper>div{
+    margin: 0;
+}
 @keyframes transitionIn{
     from{
         opacity: 0;
@@ -25,13 +27,14 @@
 }
 
 .tools-container{
-    height: 50vh;
+    
     background-color: rgb(189, 223, 220);
+     padding: 6rem 0;
 }
-
-.tools-body{
-    margin-top: 5.5rem;
+.tools-container>div{
+    margin: 0;
 }
+ 
 .tools-body h2{
     text-align: center;
     text-align: left;
@@ -52,13 +55,15 @@
 .tools-body h1{
     text-align: center;
     color: rgb(18, 19, 19);
-    margin-top: 3rem;
+      margin-top: 1rem;
     margin-right: 1rem;
     font-size: 50px;
     font-family: 'Abril Fatface', sans-serif;
 }
 
-
+.heading-container{
+  padding: 4rem 0;
+}
 
 .heading-body h2{
     text-align: center;
@@ -100,7 +105,7 @@
 
 .power-body h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 3.2rem;
 }
 
 .card{
@@ -109,20 +114,28 @@
 }
 
 .card-container{
-    margin-top:3rem;
+    
+    margin:5rem 0;
 }
-
+.card-cont{
+    width: 100%;
+    margin: 0;
+}
+.card-cont>img{
+    width: 100%;
+}
 .power-card{
     margin: 20px;
     width: 22rem;
     border-radius: 10px;
     margin-left: 2.5rem;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+   transition: transform 0.2s;   
 }
 
 .power-card:hover{
     transform:translateY(-20px);
-    animation: ease-out;
+   
 }
 
 .card img{
@@ -148,7 +161,7 @@
     font-family: 'Poppins', sans-serif;
     border-radius: 30px;
     color:#222;
-    border:2px solid #000;
+    border:1px solid rgb(58, 58, 58);
     font-weight: 550;
 }
 
