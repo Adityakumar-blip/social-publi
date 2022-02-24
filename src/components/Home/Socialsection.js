@@ -8,7 +8,7 @@ const Socialsection = () => {
     return(
         <>
             <section>
-        <div className='row'>
+        <div className='social-row-wrapper'>
         <div className="social-container">
             <div className="row g-0">
             <div className="col-md-6">

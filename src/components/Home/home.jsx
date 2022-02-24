@@ -13,12 +13,10 @@ import {Link} from 'react-router-dom'
 const Home = () => {
   return (
     <>
-    {/* asdfg */}
-    {/* we're succesful */}
-    {/* We achieve double success */}
+     
     <section className='landing-page'>
       <header>
-      <div className="col-12 col-s-12 video-container">
+      <div className=" video-container">
         <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
             </video>
             <div className="main-heading-wrapper">

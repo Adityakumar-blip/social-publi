@@ -10,23 +10,23 @@
 
 .landing-page{
     width: 100%;
-    height: 40.4rem;
+   margin: 0;
+
 }
 
 .video-container{
     object-fit:cover;
     position:relative;
-    top:0%;
-    left: 0%;
+     
     width: 100%;
-    height: 100%;
+   height: 45rem;
     padding: 0%;
 
 }
 
 .video{
     width: 100%;
-    height: 100%;
+    
 }
 
 .main-heading-wrapper{
