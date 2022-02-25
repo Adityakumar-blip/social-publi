@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 
 
-.about-wraapper{
+.about-wrapper{
     animation: transitionIn 0.8s;
+    margin: 2rem 0;
   }
   
   @keyframes transitionIn{
@@ -21,7 +22,7 @@
   }
 
 .about-heading{
-    height: 50vh;
+   padding: 4rem 0;
 }
 
 .about-heading h2{
@@ -123,7 +124,7 @@
 .typewriter-container{
     text-align: center;
     background-color: black;
-    height: 50vh;
+    padding-bottom: 3rem;
 }
 
 .typewriter-container h1{
@@ -139,4 +140,63 @@
     margin-top: 2rem;
     color: azure;
     font-family: 'Poppins',sans-serif;
+}
+
+
+@media (max-width:600px){
+     .about-heading{
+         padding: 2rem 0;
+     }
+    .about-heading>h2{
+        font-size: 2.3rem;
+    }
+    .about-heading>p{
+        font-size: 17px;
+        color: grey;
+    }
+    .typewriter-text{
+        font-size: 3.7rem;
+    }
+
+    .typewriter-container h1{
+        font-size: 1.5rem;
+    }
+
+    
+.first-heading-sm{
+    margin :0;
+    padding: 3rem 3rem 0 ;
+    font-family: 'Lora', sans-serif;
+    
+}
+.first-heading-sm>h4{
+   font-size: 1.6rem;
+   font-family: 'Poppins', sans-serif;
+
+}
+.first-body-sm>p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+.first-body-sm{
+    margin-top: 3rem;
+     
+    text-align: left;
+    margin: 0;
+    padding : 1rem 3rem 0 3rem;
+     
+}
+
+.first-img-sm img{
+    width: calc(100vw - 7rem);
+    height: 65%;
+    margin: 0;
+    margin: 1rem 0 1rem 3rem;
+    border-radius: 10px;
+    
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+}
+
 }

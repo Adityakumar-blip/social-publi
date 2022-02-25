@@ -29,12 +29,12 @@ const Newsletter = () => {
                 <h1>Ready to Join us?</h1>
                 <p>Subscribe to our newsletter for free tips and other usefull</p>
                 <div className="news-form">
-                <form  class="flex-form">
+                <form  class="flex-form flex-form-container">
                 <label for="from">
                 <i class="ion-location"></i>
                 </label>
                 <input type="email" placeholder="Enter Your Email"/>
-                <input type="submit" value="Subscribe"/>
+                <input className='submit' type="submit" value="Subscribe"/>
                </form>
                 </div>
                 </div>
