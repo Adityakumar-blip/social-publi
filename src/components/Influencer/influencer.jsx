@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./influencer.css";
 import { RestData, workData } from "./workData";
 import {Link} from 'react-router-dom';
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 function TestimonialCol(props) {
   return (
@@ -9,6 +11,7 @@ function TestimonialCol(props) {
       {props.Id % 2 === 0 ? (
         <div id="1" className="testimonial-row brighten">
           <div id="0" className="testimonial-col zero">
+            <Fade left>
             <div className="big-influencer">
               <Link  to={workData[props.Id][0].link} className="  influencer">
                 <img src={workData[props.Id][0].imgLink} alt="" srcSet="" />
@@ -18,7 +21,9 @@ function TestimonialCol(props) {
                 <br />➨
               </h5>
             </div>
+            </Fade>
           </div>
+          <Fade right big cascade>
           <div id="1" className="testimonial-col one">
             <div className="small-influencer">
               <a href={workData[props.Id][1].link} className=" influencer">
@@ -39,9 +44,11 @@ function TestimonialCol(props) {
               </h5>
             </div>
           </div>
+          </Fade>
         </div>
       ) : (
         <div id="1" className="testimonial-row brighten">
+            <Fade left big cascade>
           <div id="2" className="testimonial-col">
             <div className="small-influencer">
               <a href={workData[props.Id][1].link} className=" influencer">
@@ -62,7 +69,9 @@ function TestimonialCol(props) {
               </h5>
             </div>
           </div>
+          </Fade>
           <div id="0" className="testimonial-col">
+            <Fade right>
             <div className="big-influencer">
               <a href={workData[props.Id][0].link} className="  influencer">
                 <img src={workData[props.Id][0].imgLink} alt="" srcSet="" />
@@ -72,6 +81,7 @@ function TestimonialCol(props) {
                 <br />➨
               </h5>
             </div>
+            </Fade>
           </div>
         </div>
       )}
@@ -130,18 +140,22 @@ export default class work extends Component {
       <>
         <div className="text-container row ">
           <div className="col-lg-6 col-sm-12 text big-heading">
+            <Zoom>
             <h1>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
               rerum dignissimos s consectetur adipisicing eli
             </h1>
+            </Zoom>
           </div>
           <div className="col-lg-6 col-sm-12 text small-heading">
+            <Fade right>
             <h6>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               eveniet aliquid facilis soluta totam laborum assumenda. Soluta
               doloribus quam explicabo dolorum iusto ut, architecto labore
               debitis cum libero expedita consequuntur?
             </h6>
+            </Fade>
           </div>
         </div>
 

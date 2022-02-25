@@ -6,6 +6,7 @@ import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Zoom from 'react-reveal/Zoom'
 
 export default class extends React.Component {
   render() {
@@ -25,7 +26,7 @@ export default class extends React.Component {
     return (
       <>
       <section>
-     
+  <Zoom>
   <div className="carousel-inner">
 
     
@@ -58,6 +59,7 @@ export default class extends React.Component {
 
    
 </div>
+</Zoom>
 </section>
 </>
     );

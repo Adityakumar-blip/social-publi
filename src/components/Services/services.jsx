@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./service.css";
 import { Link } from "react-router-dom";
+import Fade from 'react-reveal/Zoom'
+import Zoom from 'react-reveal/Fade'
+
 export default class influencer extends Component {
   render() {
     return (
@@ -8,11 +11,14 @@ export default class influencer extends Component {
       <div className="service-wrapper">
         <div className="about-service">
           <div className="service service-heading ">
+            <Fade left>
             <h1 style={{ fontWeight: "bolder", color: "black" }}>
               We only do marketing that works.
             </h1>
+            </Fade>
           </div>
           <div className="service service-text ">
+              <Fade right cascade>
             <div>
               <h5
                 style={{ fontWeight: "350", lineHeight: "2" }}
@@ -31,18 +37,19 @@ export default class influencer extends Component {
                     fontFamily: "poppins",
                   }}
                   to={"/contactus"}
-                >
+                  >
                   <h5> ➨ Work with Us</h5>{" "}
                 </Link>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
-
+        <Zoom bottom cascade>
         <div className="service-container">
           <div>
-            <div className="service-section black"> <h1> INFLUENCER MARKETING </h1></div>
-            <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
+          <div className="service-section black"> <h1> INFLUENCER MARKETING </h1></div>
+          <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
             
           </div>
            <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
@@ -63,6 +70,7 @@ export default class influencer extends Component {
           </div>
 
         </div>
+        </Zoom>
        <div className="brands-container">
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">

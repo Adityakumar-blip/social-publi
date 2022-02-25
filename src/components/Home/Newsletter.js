@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import './Newsletter.css';
 import news from '../image/news.jpg';
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 const Newsletter = () => {
     const [input,setInput] =  useState("");
@@ -20,11 +22,14 @@ const Newsletter = () => {
           <div className='news-container'>
             <div className='row g-0'>
               <div className='col-md-6'>
+                <Zoom>
                 <div className='news-body'>
                 <img src={news} alt="newsletter" />
                 </div>
+                </Zoom>
               </div>
               <div className='col-md-6'>
+                <Fade right big cascade>
                 <div className='news-body'>
                 <h1>Ready to Join us?</h1>
                 <p>Subscribe to our newsletter for free tips and other usefull</p>
@@ -38,6 +43,7 @@ const Newsletter = () => {
                </form>
                 </div>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>
