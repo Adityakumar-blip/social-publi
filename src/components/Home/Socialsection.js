@@ -16,7 +16,7 @@ const Socialsection = () => {
                 <h2 className="social-title">THE WORLD'S TOP INFLUENCER MARKETING AGENCY HAS BECOME ONE OF THE GLOBE'S FASTEST GROWING FULL SERVICE MARKETING FIRMS.</h2>
             </div>
         </div>
-            <div className="col-md-6">
+            <div className="col-md-6 img-container">
                 <img src={img} class="img-fluid rounded-start" alt="..."/>
             </div>
     </div>

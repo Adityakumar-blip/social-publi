@@ -1,7 +1,7 @@
 
 .footer-wrapper{
     width: 100%;
-     
+     padding: 3rem 0;
     text-align: center;
     background-color: rgb(7, 7, 7);
   }
@@ -61,13 +61,15 @@
       padding: 1rem ;
 
     }
-
+    .column-wrapper>.column{
+      padding: 1rem;
+    }
     .Links{
       display: flex;
       color: #fff;
       justify-content: center;
       align-items: center;
-      
+      padding-top:2rem ;
     }
     .link{
       padding: 1rem 1rem;

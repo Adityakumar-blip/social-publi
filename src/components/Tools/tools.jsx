@@ -13,7 +13,7 @@ export default class tools extends Component {
       <>
       <section>
         <div className='tools-wrapper'>
-        <div className='row'>
+        <div className='row tools-landing '>
           <div className='tools-container'>
             <div className='row g-0'>
               <div className='col-md-6'>
@@ -38,7 +38,7 @@ export default class tools extends Component {
           <div className='heading-body'>
               <h2>The Organic Superfood You Need To Fuel Your Brand</h2>
           </div>
-          <div className='row'>
+          <div style={{margin:0}} className='row'>
             <div className='col-md-6'>
               <div className='slogan-body'>
               <p>Every brand wants to get on the Instagram ride to not only reach but connect with their followers and increase engagement. Brands from diverse industries are aiming to reach millennials and Gen Z through Instagram campaigns. It has become a great platform to build communities, engage audiences and increase sales through the platform.
@@ -59,7 +59,7 @@ export default class tools extends Component {
           <div className='row card-container'>
             <div className='col-md-4'>
               <div className='power-card'>
-                <div className='card py-3 py-sm-0'>
+                <div className='card py-3 py-sm-0 card-cont'>
                   <img src={campaign} alt="campaign" />
                   <div className='card-body'>
                   <h5 className='card-tittle'>Campaign Management</h5>
@@ -73,7 +73,7 @@ export default class tools extends Component {
             </div>
             <div className='col-md-4'>
               <div className='power-card'>
-                <div className='card py-3 py-sm-0'>
+                <div className='card py-3 py-sm-0 card-cont'>
                   <img src={insights} alt="campaign" />
                   <div className='card-body'>
                   <h5 className='card-tittle'>SocialPubli insights</h5>
@@ -87,7 +87,7 @@ export default class tools extends Component {
             </div>
             <div className='col-md-4'>
               <div className='power-card'>
-                <div className='card py-3 py-sm-0'>
+                <div className='card py-3 py-sm-0 card-cont'>
                   <img src={search} alt="campaign" />
                   <div className='card-body'>
                   <h5 className='card-tittle'>SocialPubli Search</h5>

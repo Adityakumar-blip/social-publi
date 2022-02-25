@@ -9,7 +9,7 @@ import about3 from '../image/about3.jpg'
 const About = () => {
   return (
     <section>
-      <div className='about-wraapper'>
+      <div className='about-wrapper'>
         <div className="about-heading">
             <h2>The SocialPubli's Secret</h2>
             <p>we're telling you our story.</p>
@@ -37,36 +37,36 @@ const About = () => {
 
         <div className='first-container'>
           <div className='row'>
-            <div className='col-md-6'>
-              <div className="first-heading">
+            <div className='col-md-6 col-sm-12'>
+              <div className="first-heading first-heading-sm">
               <h4>Our Mission</h4>
               </div>
-              <div className='first-body'>
+              <div className='first-body first-body-sm'>
               <p>
               We are here to tell impactful brand stories and set trends through authentic influencer marketing campaigns on digital platforms. We facilitate proliferating brands to collaborate with prominent nano, micro, macro or mega level influencers as per their needs and create strong brand advocacy through their follower base.
               </p>
               </div>
             </div>
-            <div className='col-md-6'>
-              <div className='first-img'>
+            <div className='col-md-6 col-sm-12'>
+              <div className='first-img first-img-sm'>
               <img src={about1} alt=""/>
               </div>
             </div>
           </div>
         </div>
-
+        {  window.innerWidth>600? 
         <div className='second-container'>
           <div className='row'>
           <div className='col-md-6'>
-              <div className='second-img'>
+              <div className='second-img first-img-sm'>
               <img src={about2} alt=""/>
               </div>
             </div>
             <div className='col-md-6'>
-              <div className="second-heading">
+              <div className="second-heading first-heading-sm">
               <h4>Our Vision</h4>
               </div>
-              <div className='second-body'>
+              <div className='second-body first-body-sm'>
               <p>
               We want to gap the bridge between quality influencers and growing brands. We aim for a world where influencer marketing is omnipresent, be it an event, campaign, piece of content, or product.
               </p>
@@ -74,14 +74,36 @@ const About = () => {
             </div>
           </div>
         </div>
+        :
+        <div className='second-container'>
+        <div className='row'>
+        
+          <div className='col-md-6'>
+            <div className="second-heading first-heading-sm">
+            <h4>Our Vision</h4>
+            </div>
+            <div className='second-body first-body-sm'>
+            <p>
+            We want to gap the bridge between quality influencers and growing brands. We aim for a world where influencer marketing is omnipresent, be it an event, campaign, piece of content, or product.
+            </p>
+            </div>
+          </div>
+          <div className='col-md-6'>
+            <div className='second-img first-img-sm'>
+            <img src={about2} alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+}
 
         <div className='third-container'>
           <div className='row'>
             <div className='col-md-6'>
-              <div className="third-heading">
+              <div className="third-heading first-heading-sm">
               <h4>Our Story</h4>
               </div>
-              <div className='third-body'>
+              <div className='third-body first-body-sm'>
               <p>
               We're a bunch of experienced entrepreneurs, marketeers & tech geeks with an adept sense of story-telling. Therefore, we want to put out your brand stories into the dynamic world of social media through compelling influencer marketing campaigns. We believe that the future lies in the beautiful blend of technology & people, and we're here to make it happen with you.
               Drop in your queries and our team will get in touch with you.
@@ -89,7 +111,7 @@ const About = () => {
               </div>
             </div>
             <div className='col-md-6'>
-              <div className='third-img'>
+              <div className='third-img first-img-sm'>
               <img src={about3} alt=""/>
               </div>
             </div>

@@ -76,3 +76,23 @@
 .client-logo img:hover{
     transform: translateY(-10px);
 }
+@media (max-width:600px){
+
+    #clients .client-logo {
+        
+        
+        border-right: none;
+        border-bottom:  none;
+        
+        background: #fff;
+       height: 10rem;
+    }
+     
+    .client1{
+        width: 60%;
+    }
+    #clients .clients-wrap {
+        border: none;
+        margin-bottom: 30px;
+    }
+}

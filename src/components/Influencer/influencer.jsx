@@ -1,26 +1,25 @@
 import React, { Component } from "react";
 import "./influencer.css";
 import { RestData, workData } from "./workData";
- 
+import {Link} from 'react-router-dom';
 
 function TestimonialCol(props) {
   return (
     <>
-    <div className='influencer-wrapper'>
       {props.Id % 2 === 0 ? (
         <div id="1" className="testimonial-row brighten">
-          <div id="0" className="testimonial-col">
+          <div id="0" className="testimonial-col zero">
             <div className="big-influencer">
-              <a href={workData[props.Id][0].link} className="  influencer">
+              <Link  to={workData[props.Id][0].link} className="  influencer">
                 <img src={workData[props.Id][0].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
               <h5 className="influencer-title">
                 {workData[props.Id][0].influencerTitle}
                 <br />➨
               </h5>
             </div>
           </div>
-          <div id="1" className="testimonial-col">
+          <div id="1" className="testimonial-col one">
             <div className="small-influencer">
               <a href={workData[props.Id][1].link} className=" influencer">
                 <img src={workData[props.Id][1].imgLink} alt="" srcSet="" />
@@ -30,7 +29,7 @@ function TestimonialCol(props) {
                 <br />➨
               </h5>
             </div>
-            <div id="1" className="small-influencer">
+            <div id="2" className="small-influencer">
               <a href={workData[props.Id][2].link} className=" influencer">
                 <img src={workData[props.Id][2].imgLink} alt="" srcSet="" />
               </a>
@@ -43,7 +42,7 @@ function TestimonialCol(props) {
         </div>
       ) : (
         <div id="1" className="testimonial-row brighten">
-          <div id="1" className="testimonial-col">
+          <div id="2" className="testimonial-col">
             <div className="small-influencer">
               <a href={workData[props.Id][1].link} className=" influencer">
                 <img src={workData[props.Id][1].imgLink} alt="" srcSet="" />
@@ -76,7 +75,6 @@ function TestimonialCol(props) {
           </div>
         </div>
       )}
-    </div>  
     </>
   );
 }
@@ -85,13 +83,14 @@ export default class work extends Component {
   constructor() {
     super();
     this.state = {
-      id: 0,
+      id: workData.length-1,
       LoadMorebackgroundColor:'white',
       LoadLessbackgroundColor:'white'
     };
   }
   AddData = () => {
     let ID = this.state.id;
+    console.log(ID);
     if(ID<RestData.length-1){
     let testimonialRow = RestData[ID + 1];
     workData.push(testimonialRow);
@@ -103,6 +102,7 @@ export default class work extends Component {
   }
   else{
     this.setState({
+       
       LoadMorebackgroundColor:'grey'
     })
   }
@@ -119,6 +119,7 @@ export default class work extends Component {
     }
     else{
       this.setState({
+        
         LoadLessbackgroundColor:'grey'
      })
     }

@@ -65,3 +65,44 @@
   input[type="search"] {
     flex-basis: 500px;
   }
+
+  
+@media (max-width:600px){
+     
+*{
+  scroll-padding-right:none ;
+}
+     .newsletter-wrapper{
+       padding:4rem 2rem ;
+       
+     }
+     .news-body{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
+.news-body>img{
+  width: 90%;
+  
+}
+     .news-body>h1{
+       font-size: 46px;
+       padding: 0;
+     }
+
+     .news-body>p{
+       font-size: 15px;
+       color: grey;
+     }
+
+     .flex-form-container{
+       width: 24rem;
+       margin-right: 3rem;
+       padding-top: 0;
+     }
+     .flex-form input[type="submit"] {
+       
+      width: 9rem;
+  }
+}

@@ -16,7 +16,9 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-simple-typewriter": "^3.0.1",
+    "react-slick": "^0.28.1",
     "react-use-smooth-scroll": "^1.0.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"

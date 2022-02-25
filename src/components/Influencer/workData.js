@@ -99,7 +99,31 @@ let workData=[
        "https://images.unsplash.com/photo-1615332859295-aa9dc9f01fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60",
      influencerTitle: "shubham"
    }
- ]
+ ],
+ [
+   
+  {
+   id:1,
+  link: "",
+  imgLink:
+    "https://images.unsplash.com/photo-1640327866024-d06817d25393?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+  influencerTitle: "Shivam"
+},
+{
+  id:1,
+  link: "",
+  imgLink:
+  "https://media.istockphoto.com/photos/mature-indian-couple-hugging-and-looking-at-camera-picture-id1319763174?b=1&k=20&m=1319763174&s=170667a&w=0&h=QuOn6N4K-TMDr6lm_Q_BbrVoMxdpuPJnB-ipU-ZO1ck=",
+  influencerTitle: "Aditya"
+},
+{
+  id:1,
+  link: "",
+  imgLink:
+    "https://images.unsplash.com/photo-1505535162959-9bbcb4ab22d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+  influencerTitle: "shubham"
+}
+]
   
  ];
 

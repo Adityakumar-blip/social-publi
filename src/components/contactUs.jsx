@@ -5,8 +5,8 @@ export default class contactUs extends Component {
   render() {
     return (
       <>
-        <div className="contactUs-container">
-          <div className="otherOptionsToConnect">
+        <div className="row contactUs-container">
+          <div className=" col col-sm-12 otherOptionsToConnect">
             <div>
               {" "}
               <h1 style={{color:'#ffff62'}} >Contact Us</h1>
@@ -28,7 +28,7 @@ export default class contactUs extends Component {
               </a>
             </div>
           </div>
-          <div className="form-container">
+          <div className="col col-sm-12 form-container">
             <form action="">
               <div className="leftRight">
                 <div className="left">
