@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import brand from '../image/about1.jpg'
 import collab from '../image/collab.jpg'
 import puzzle from '../image/Puzzle.jpg'
+import Slide from  'react-reveal/Slide'
 
 export default class brands extends Component {
   render() {
