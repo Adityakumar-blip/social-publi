@@ -45,25 +45,29 @@ export default class influencer extends Component {
             </Fade>
           </div>
         </div>
-        <Zoom bottom cascade>
+        <Zoom bottom cascade style={{height:'fit-content'}} >
         <div className="service-container">
-          <div>
+          <div className="double-container">
           <div className="service-section black"> <h1> INFLUENCER MARKETING </h1></div>
           <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
             
           </div>
-           <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
-          <div>
+
+           
+              <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
+          <div className="single-container">
           <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH INFLUSOFT™</h1></div>
           </div>
           <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
-          <div>
+        
+           
+           <div className="double-container">
             <div className="service-section grey"> <h1>CREATIVE&  CONTENT</h1></div>
             <div className="service-section black"><h1>PERFORMANCE MARKETING & MEDIA</h1></div>
             
           </div>
 
-          <div>
+          <div className="double-container">
             <div className="service-section black"><h1>STRATEGY</h1></div>
             <div className="service-section grey"><h1  >B2B</h1></div>
             
@@ -71,31 +75,7 @@ export default class influencer extends Component {
 
         </div>
         </Zoom>
-       <div className="brands-container">
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-
-    <h6>AS FEATURED IN</h6>
-    <div className="carousel-item active">
-      sgf
-    </div>
-    <div className="carousel-item">
-      sdfgf
-    </div>
-    <div className="carousel-item">
-       dfsgsfdg
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
+       
 </div>
       </>
     );
