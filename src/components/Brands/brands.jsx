@@ -23,10 +23,10 @@ export default class brands extends Component {
         </div>
 
         <div className='brands-content'>
-        <div className='row'>
+        <div style={{margin:'0'}} className='row'>
           <div className='brand-container'>
             <div className='row g-0'>
-              <div className='col-md-6'>
+              <div className='col-md-6 col-sm-12'>
                 <div className='brand-body'>
                   <Fade right>
                   <h2>Influencer Marketing isn't a fad</h2>
@@ -38,7 +38,7 @@ export default class brands extends Component {
                   </Fade>
                 </div>
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-6 col-sm-12'>
                 <div className='brand-body'>
                   <Zoom>
                   <img src={brand} alt=""/>
@@ -62,7 +62,7 @@ export default class brands extends Component {
         <div className="brand-service">
           <h1>Brands Services</h1>
           <div className="brand-service-container">
-          <div class="card"  >
+          <div class="card "  >
             <img src={collab} class="card-img-top collab-img" alt="..."/>
             <div class="card-body wrap">
             <p class="card-text">Conversions.</p>

@@ -18,7 +18,7 @@ export default class tools extends Component {
         <div className='row tools-landing '>
           <div className='tools-container'>
             <div className='row g-0'>
-              <div className='col-md-6'>
+              <div className='col-md-6 col-sm-12'>
                 <div className='tools-body'>
                   <Fade left>
                   <h2>We are the superpowers you need for your brand</h2>
@@ -26,14 +26,14 @@ export default class tools extends Component {
                   </Fade>
                 </div>
               </div>
-              <div className='col-md-6'>
+              <div className='col-md-6 col-sm-12'>
                 <div className='tools-body'>
                   <Fade right>
                   <h1><span>We</span><br/> 
                   <span>Are</span><br/>
                   <span>SocialPubli</span>
                   </h1>
-                  </Fade>
+                    </Fade>
                 </div>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default class tools extends Component {
             </Fade>
           </div>
           <div style={{margin:0}} className='row'>
-            <div className='col-md-6'>
+            <div className='col-md-6 col-sm-6'>
               <div className='slogan-body'>
               <Fade left>
               <p>Every brand wants to get on the Instagram ride to not only reach but connect with their followers and increase engagement. Brands from diverse industries are aiming to reach millennials and Gen Z through Instagram campaigns. It has become a great platform to build communities, engage audiences and increase sales through the platform.
@@ -55,7 +55,7 @@ export default class tools extends Component {
               </Fade>
               </div>
             </div>
-            <div className='col-md-6'>
+            <div className='col-md-6 col-sm-6'>
               <div className='slogan-img'>
               <Zoom>
               <img src={Slogan} alt=""/>

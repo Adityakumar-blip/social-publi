@@ -29,24 +29,25 @@
 .tools-container{
     
     background-color: rgb(189, 223, 220);
-     padding: 6rem 0;
+     padding: 5rem 0;
 }
 .tools-container>div{
     margin: 0;
 }
- 
+  
 .tools-body h2{
     text-align: center;
     text-align: left;
     text-transform: capitalize;
-    margin-top: 1rem;
-    margin-left: 4rem;
+    padding: 1rem 0;
     font-family: 'Lora', sans-serif;
     font-size: 40px;
 }
-
+.tools-body{
+    padding: 1rem 2rem 1rem 4rem;
+}
 .tools-body p{
-    margin-left: 4rem;
+     
     font-weight: 400;
      
     font-family:'Poppins', sans-serif;
@@ -55,48 +56,43 @@
 .tools-body h1{
     text-align: center;
     color: rgb(18, 19, 19);
-      margin-top: 1rem;
-    margin-right: 1rem;
+     
     font-size: 50px;
     font-family: 'Abril Fatface', sans-serif;
 }
 
-.heading-container{
-  padding: 4rem 0;
-}
+ .heading-container{
+     padding: 4rem;
+ }
 
-.heading-body h2{
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 3rem;
-    font-family: 'Lora', sans-serif;
-    font-size: 40px;
-}
-
-.heading-title{
-    margin-top: 3rem;
-}
-
+ .heading-container h2{
+     text-align: center;
+     font-size: 3rem;
+     padding: 1rem 0;
+ }
 .slogan-body{
-    margin-top: 3rem;
-    text-align: center;
-    text-align: left;
-    margin-left: 12rem;
-    height: 60vh;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+  padding: 1.5rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-
-.slogan-img img{
-    width: 60%;
-    height: 65%;
-    margin-top: 3.5rem;
-    border-radius: 10px;
-    margin-left: 5rem;
+.slogan-body p{
+    font-size: 1.1rem;
+     color: rgb(75, 75, 75);
+     line-height: 1.7;
 }
+.slogan-img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .slogan-img img{
+     width:  25rem  ;
+     margin: 2rem 2rem;
 
+ }
 .power-body{
     text-align: center;
     font-size: 40px;
@@ -129,7 +125,7 @@
     width: 22rem;
     border-radius: 10px;
     margin-left: 2.5rem;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0,0.1);
+    box-shadow: 5px 5px 5px 5px rgba(46, 46, 46, 0.1);
    transition: transform 0.2s;   
 }
 
@@ -145,13 +141,13 @@
 
 .card-body h5{
     font-family:'Lora', sans-serif;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight:300;
 }
 
 .card-text{
     font-family:'Poppins', sans-serif;
-    font-size:14px;
+    font-size:0.9rem;
     color:#222;
 }
 
@@ -171,3 +167,70 @@
     border: 0px;
 }
 
+@media (max-width:600px){
+    .tools-container{
+    
+          padding: 3rem 0;
+    }
+    .tools-container > div{
+        margin: 0;
+        padding: 0;
+    }
+    .tools-body{
+        padding: 1rem 2rem;
+    }
+    .tools-body>h2{
+        font-size: 2rem;
+    }
+
+
+    .heading-container{
+        padding: 2rem  ;
+    }
+   
+    .heading-container h2{
+        text-align: center;
+        font-size: 2.2rem;
+        padding:  1rem 0;
+    }
+   .slogan-body{
+     padding: 0;
+     display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   .slogan-body p{
+       font-size: 1rem;
+        color: rgb(75, 75, 75);
+        line-height: 1.7;
+   }
+   .slogan-img{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+    .slogan-img img{
+        width:  24rem  ;
+        margin: 2rem 2rem;
+   
+    }
+ .card-container{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 3rem 0;
+ }
+ .power-body h2{
+     font-size: 2.5rem;
+ }
+  .power-card{
+      width:calc( 100vw - 7rem ) ;
+  }
+ .power-card img{
+    width:calc( 100vw - 7rem - 2px ) ;
+
+ }
+}
