@@ -91,8 +91,9 @@
 .influencer-title{
   position: absolute;
   left: 3rem;
-  bottom: 3rem;
+  bottom: 2rem;
   color: white;
+  font-size: 2rem;
 }
 
 .small-influencer{
@@ -174,13 +175,12 @@
     }
 
     .big-heading>h1{
-      font-size: 20px;
+      font-size:1.8rem;
     line-height: normal;
     letter-spacing: -.25px;
-    padding-bottom: 20px;
-    font-weight: bold;
+    padding-bottom: 0;
+    font-weight: 500;
     }
-
    .small-heading{
      padding: 1rem 0;
    }
@@ -235,7 +235,13 @@
    height: 100%;
    overflow: hidden;
  }
-
+ .influencer-title{
+  position: absolute;
+  left: 3rem;
+  bottom: 2rem;
+  color: white;
+  font-size: 1rem;
+}
    .button-wrapper{
      margin: 0 1rem;
    }

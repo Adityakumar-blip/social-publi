@@ -59,7 +59,7 @@ export default class influencer extends Component {
           <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH INFLUSOFT™</h1></div>
           </div>
           <div style={{width:'100%' ,height:'6px' , backgroundColor:'#0E7895'}}></div>  
-        
+            
            
            <div className="double-container">
             <div className="service-section grey"> <h1>CREATIVE&  CONTENT</h1></div>

@@ -3,7 +3,7 @@
 }
 
 @keyframes transitionIn{
-    from{
+    from{   
         opacity: 0;
         transform: translateY(-10);
     }
@@ -16,8 +16,7 @@
 
 .brands-heading{
     text-align: center;
-    height:80vh;
-
+    padding: 5rem 0;
 }
 
 .brands-heading h2{
@@ -60,7 +59,7 @@
 }
 
 .brand-container{
-    height: 60vh;
+     padding: 3rem;
 }
 
 .brand-body img{
@@ -141,11 +140,17 @@
 
 
 }
+.get-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
 
 .get-start img{
     width:30%;
     height:30%;
-    margin-left: 29rem;
+     
 }
 
 .get-start .start-button{
@@ -167,3 +172,78 @@
 }
 
 
+@media (max-width:600px){
+
+    .brands-heading h2{
+        font-size: 2rem;
+        font-family: 'Lora', sans-serif;
+         margin: 1rem 2rem 1rem 3rem;
+        padding-top: 1rem;
+    line-height: 1.7;
+    }
+    .brand-body p{
+        padding-left:2rem;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    .brand-body h2{
+        margin:   0;
+        padding:1rem 1rem 1rem 2rem;
+    }
+    .brand-container{
+        padding:1rem 2rem;
+   }
+
+   .brand-container img{
+       width: calc( 100vw - 4rem );
+       height: auto;
+       justify-content: center;
+       align-items: center;
+       padding:2rem;
+       
+   }
+   .collab-body img{
+       width:calc( 100vw - 2rem );
+   }
+   .brand-service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .brand-service-container >div{
+       margin: 1rem;
+       padding-bottom: 1rem ;
+       text-align: center;
+      
+   }
+
+   
+.get-start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.get-start img{
+    width:50%;
+    height:50%;
+     
+}
+.get-start h1{
+    font-size: 2rem;
+    
+}
+.get-start .start-button{
+    outline: none;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    margin:1rem 3rem 4rem 3rem  ;
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+
+}
