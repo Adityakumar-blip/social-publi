@@ -13,6 +13,7 @@ import { BrowserRouter as Router,Routes ,Switch ,Route, BrowserRouter } from 're
 import LetsTalk from './components/LetsTalk';
 import About from './components/About/About.js';
 import Influencerpage from './components/Influencerpage/Influencerpage'
+import Brandform from './components/Brandform/Brandform'
 function App() {  
   return (
     <>
@@ -29,6 +30,7 @@ function App() {
             <Route path='/about' element={<About/>}/>
             <Route path='/influencer/testimonial' element={<TestimonialProfile/>}/>
             <Route path='/influencerpage' element={<Influencerpage/>}/>
+            <Route path='/brandform' element={<Brandform/>}/>
 
             </Routes>
         <LetsTalk/>

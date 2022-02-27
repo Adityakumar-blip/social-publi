@@ -17,7 +17,7 @@ export default class brands extends Component {
           <Zoom>
           <h2>OK brands, if you’re ready to be your outsourced head of all things influencers it’s time to apply to join us…</h2>
           <button type="button" className="join-button">
-            <Link className='join-link' to='/influencerpage'>Kick Start</Link>
+            <Link className='join-link' to='/brandform'>Kick Start</Link>
           </button>
           </Zoom>
         </div>
@@ -99,7 +99,7 @@ export default class brands extends Component {
           </Zoom>
           <Fade bottom>
           <button className="start-button">
-            <Link className="get-link" to="/influencerpage">Get started</Link>
+            <Link className="get-link" to="/brandform">Get started</Link>
           </button>
           </Fade>
         </div>
