@@ -76,7 +76,7 @@ function TestimonialCol(props) {
               <a href={workData[props.Id][0].link} className="  influencer">
                 <img src={workData[props.Id][0].imgLink} alt="" srcSet="" />
               </a>
-              <h5 className="influencer-title">
+               <h5 className="influencer-title">
                 {workData[props.Id][0].influencerTitle}
                 <br />➨
               </h5>
@@ -142,19 +142,14 @@ export default class work extends Component {
           <div className="col-lg-6 col-sm-12 text big-heading">
             <Zoom>
             <h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-              rerum dignissimos s consectetur adipisicing eli
-            </h1>
+            We only do marketing that works. </h1>
             </Zoom>
           </div>
           <div className="col-lg-6 col-sm-12 text small-heading">
             <Fade right>
             <h6>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              eveniet aliquid facilis soluta totam laborum assumenda. Soluta
-              doloribus quam explicabo dolorum iusto ut, architecto labore
-              debitis cum libero expedita consequuntur?
-            </h6>
+            Our talented team is responsible for having created some of the most viral and successful campaigns for our clients globally. We continually aim to exceed expectations, make lasting memories, and amplify brands to their highest potential. Our marketing mix only contains services with proven ROI, backed by analytics.    </h6>
+            <a href=""> ➨ Work With Us</a>
             </Fade>
           </div>
         </div>
