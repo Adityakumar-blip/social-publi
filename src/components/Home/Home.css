@@ -132,10 +132,7 @@ color: white;
 
 
 @media (max-width:760px){
-   body>*{
-
-@media (max-width:600px){
-   *{
+   body>* {
 
          overflow-x: hidden;
          
