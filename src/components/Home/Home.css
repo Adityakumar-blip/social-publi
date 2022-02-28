@@ -6,6 +6,7 @@
 *{
     padding: 0;  
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .landing-page{
@@ -49,7 +50,9 @@ background-color: #000;
 color: white;
 }
 
-.glow-on-hover {
+
+
+/* .glow {
     width: 220px;
     height: 50px;
     border: none;
@@ -60,9 +63,9 @@ color: white;
     position: relative;
     z-index: 0;
     border-radius: 10px;
-}
+} */
 
-.glow-on-hover:before {
+/* .glow:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -79,19 +82,19 @@ color: white;
     border-radius: 10px;
 }
 
-.glow-on-hover:active {
+.glow:active {
     color: #000;
 }
 
-.glow-on-hover:active:after {
+.glow:active:after {
     background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.glow:before {
     opacity: 1;
 }
 
-.glow-on-hover:after {
+.glow:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -109,11 +112,11 @@ color: white;
     100% { background-position: 0 0; }
 }
 
-.slide{
-    animation: slide 1s linear forwards;
+.sliding{
+    animation: sliding 1s linear forwards;
 }
 
-@keyframes slide{
+@keyframes sliding{
     0%{
         transform: translate(100px);
         opacity: 0;
@@ -123,13 +126,19 @@ color: white;
         transform: translate(0px);
         opacity: 1;
     }
-}
+} */
+
 
 
 
 @media (max-width:760px){
    body>*{
+
+@media (max-width:600px){
+   *{
+
          overflow-x: hidden;
+         
     }
     .landing-page{
         padding-top: 5rem ;

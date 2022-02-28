@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
 
 import "./contactus.css";
 export default class contactUs extends Component {
@@ -6,10 +9,11 @@ export default class contactUs extends Component {
     return (
       <>
         <div className="row contactUs-container">
+            <Fade left  cascade>
           <div className=" col col-sm-12 otherOptionsToConnect">
             <div>
               {" "}
-              <h1 style={{color:'#ffff62'}} >Contact Us</h1>
+              <h1 style={{color:'black'}} >Contact Us</h1>
             </div>
             <div>
               <p  >
@@ -24,91 +28,32 @@ export default class contactUs extends Component {
             </div>
             <div>
               <a href="http://www.google.com">
-                <i style={{color:'white'}} className="fas fa-mail-bulk fa-4x"></i>
+                <i style={{color:'black'}} className="fas fa-mail-bulk fa-4x"></i>
               </a>
             </div>
           </div>
-          <div className="col col-sm-12 form-container">
-            <form action="">
-              <div className="leftRight">
-                <div className="left">
-                  <div className="firstName">
-                    <h6>First Name *</h6>
-
-                    <input
-                      spellCheck="false"
-                      type="text"
-                      name="fName"
-                      id="fName"
-                    />
-                  </div>
-                  <div className="Email">
-                    <h6>Email *</h6>
-                    <input type="email" name="Email" id="Email" />
-                  </div>
-                  <div className="title">
-                    <h6>Title</h6>
-                    <input
-                      spellCheck="false"
-                      type="text "
-                      name="Title"
-                      id="Title"
-                    />
-                  </div>
-                </div>
-
-                <div className="right">
-                  <div className="lastName">
-                    <h6>Last Name</h6>
-                    <input
-                      spellCheck="false"
-                      type="text"
-                      name="lName"
-                      id="lName"
-                    />
-                  </div>
-                  <div className="Phone">
-                    <h6>Phone Number *</h6>
-                    <input type="number" name="PhoneNumber" id="PhoneNumber" />
-                  </div>
-                  <div className="location">
-                    <h6>Location</h6>
-                    <input
-                      spellCheck="false"
-                      type="text"
-                      name="Location"
-                      id="Location"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="company">
-                <h6>Company Name</h6>
-                <input
-                  spellCheck="false"
-                  type="text"
-                  name="companyName"
-                  id="companyName"
-                />
-              </div>
-
-              <div className="TextPlace">
-                <h6>Tell Me something about yourself *</h6>
-                <textarea
-                  name="TellMe"
-                  id="TellMe"
-                  cols="30"
-                  rows="10"
-                  spellCheck="false"
-                ></textarea>
-              </div>
-
-              <br />
-              <button className="submitbtn btn btn-dark " type="submit">
-                Submit
-              </button>
-            </form>
+            </Fade>
+          <div className="col col-sm-12 category-container">
+          <div class="row category">
+  <div class="col-sm-6">
+    <div class="card category-card">
+      <div class="card-body category-body">
+        <h5 class="card-title card-heading">I am <br/> <span>Influencer</span></h5>
+        <p class="card-text card-para">Coonect with the variety of brands through socialpubli and gain exposure to the larger audience. Become a part of socialpubli  <span>"Lets go viral"</span></p>
+        <Link to="/influencerpage" class="btn btn-primary category-btn">Connect</Link>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card category-card">
+      <div class="card-body category-body">
+        <h5 class="card-title card-heading">I am <br/> <span>Brand</span></h5>
+        <p class="card-text card-para">Want your favourite influencer for marketing campaigns, contact us and we'll do it for you.Let's make your campaign succesfull</p>
+        <Link to="/brandform" class="btn btn-primary category-btn">Connect</Link>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </>

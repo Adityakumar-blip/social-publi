@@ -71,12 +71,13 @@ export default class influencer extends Component {
                   </h5>
                   <div className="lets-work">
                     <Link
+
+                    to="/contactus"
                       style={{
                         color: "#379BC1",
                         textDecoration: "none",
                         fontFamily: "poppins",
                       }}
-                      to={"/contactus"}
                     >
                       <h5> ➨ Work with Us</h5>{" "}
                     </Link>
