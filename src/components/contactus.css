@@ -10,19 +10,60 @@
     width: 100%;
     height: 56rem;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(28,67,79,1) 35%, rgba(0,212,255,1) 100%);
     position: relative;
+    background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
 }
-.form-container{
+.category-container{
     width: 50%;
-    color: rgb(80, 80, 80);
-    background-color: rgb(224, 224, 224);
     position: absolute;
     top: 3rem;
     right: 3rem;
-     padding-left: 1rem; 
-    border-radius: 2rem;
+    padding: 2rem 2rem;
+    display:flex;
+    flex-direction:column;
+
     
+}
+
+.category-card{
+    height: 20rem;
+    background-color: #fff;
+}
+
+.category-card h5 {
+    font-size: 2rem;
+}
+
+.category-card p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.category-card .category-btn{
+    width: 100%;
+    background-color: rgb(149, 149, 240);
+    border: 1px  rgb(149, 149, 240) ;
+    color: black;
+    font-weight:500 ;
+}
+
+.category-card .category-btn:hover{
+    background-color: #1A4E5C;
+    animation: 2s ease-out;
+    color: white;
+}
+
+.category-card .category-btn:active{
+    background: transparent;
+    border: 2px #1A4E5C;
+    color: black;
+    font-weight: 500;
+}
+
+.category-card h5 span{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 .leftRight{
@@ -82,7 +123,11 @@ textarea{
     padding-left: 6rem;
     text-align: end;
    font-family: 'poppins';
-    color: rgb(202, 201, 201);
+    color: #000;
+}
+
+.otherOptionsToConnect h1{
+    font-family:'Lora', sans-serif;
 }
 
 .otherOptionsToConnect>div{
@@ -91,10 +136,11 @@ textarea{
 }
 
 .otherOptionsToConnect>div>p{
-    color: rgb(189, 189, 168);
+    color:black;
 }
 
 input{
     border-radius: 0.5rem;
     border: 1px solid #1A4E5C;
+    
 }
