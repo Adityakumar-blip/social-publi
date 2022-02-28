@@ -62,9 +62,16 @@
      padding: 3rem;
 }
 
+ 
+.brand-body{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 .brand-body img{
     width: 100%;
-    height: 60vh;
+    height: 100%;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -85,7 +92,7 @@
 .brand-collab h1{
     padding:2rem;
 }
-
+  
 .collab-body img{
     width: 70%;
     height: 50%;
@@ -100,6 +107,9 @@
 
 .brand-service-container{
     padding: 2rem;
+     
+     text-align: center;
+
 }
 
 .card{
@@ -118,8 +128,7 @@
 .card .wrap{
     background-color: #fff;
     border-radius: 0 0 10px 10px;
-    height: 30vh;
-
+     
 }
 
 .wrap .card-text{
@@ -246,4 +255,12 @@
     border-radius: 30px;
 }
 
+}
+
+@media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
+
+.card{
+    height: auto;
+     margin: 1rem;
+}
 }

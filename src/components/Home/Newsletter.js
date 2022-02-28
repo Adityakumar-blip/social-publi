@@ -20,7 +20,7 @@ const Newsletter = () => {
         <div className='newsletter-wrapper'> 
     <div className='row'>
           <div className='news-container'>
-            <div className='row g-0'>
+            <div className='row g-0 form-row'>
               <div className='col-md-6'>
                 <Zoom>
                 <div className='news-body'>
@@ -34,18 +34,21 @@ const Newsletter = () => {
                 <h1>Ready to Join us?</h1>
                 <p>Subscribe to our newsletter for free tips and other usefull</p>
                 <div className="news-form">
-                <form  class="flex-form flex-form-container">
+               
+                </div>
+                </div>
+                <div className='form-contain '>
+            <form  class="flex-form flex-form-container">
                 <label for="from">
                 <i class="ion-location"></i>
                 </label>
                 <input type="email" placeholder="Enter Your Email"/>
                 <input className='submit' type="submit" value="Subscribe"/>
-               </form>
-                </div>
-                </div>
+               </form></div>
                 </Fade>
               </div>
             </div>
+           
           </div>
         </div>
         </div>

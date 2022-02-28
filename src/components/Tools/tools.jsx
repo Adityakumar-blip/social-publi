@@ -70,9 +70,9 @@ export default class tools extends Component {
           </div>
           <Fade bottom big cascade>
           <div className='row card-container'>
-            <div className='col-md-4'>
+            <div className='col-md-6'>
               <div className='power-card'>
-                <div className='card py-3 py-sm-0 card-cont'>
+                 <div className='card py-3 py-sm-0 card-cont'>
                   <img src={campaign} alt="campaign" />
                   <div className='card-body'>
                   <h5 className='card-tittle'>Campaign Management</h5>
@@ -84,7 +84,7 @@ export default class tools extends Component {
                 </div>
               </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-6'>
               <div className='power-card'>
                 <div className='card py-3 py-sm-0 card-cont'>
                   <img src={insights} alt="campaign" />
@@ -98,7 +98,7 @@ export default class tools extends Component {
                 </div>
               </div>
             </div>
-            <div className='col-md-4'>
+            <div className='col-md-6'>
               <div className='power-card'>
                 <div className='card py-3 py-sm-0 card-cont'>
                   <img src={search} alt="campaign" />

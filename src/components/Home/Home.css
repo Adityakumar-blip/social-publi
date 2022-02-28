@@ -11,7 +11,7 @@
 .landing-page{
     width: 100%;
    margin: 0;
-
+background-color: #000;
 }
 
 .video-container{
@@ -40,12 +40,13 @@
     font-family:'Poppins', sans-serif;
     font-weight: 500;
     font-size:50px;
+    color: white;
 }
 
 .main-para{
     font-family: 'Playfair Display', sans-serif;
     font-size: 18px;
-
+color: white;
 }
 
 .glow-on-hover {
@@ -126,14 +127,17 @@
 
 
 
-@media (max-width:600px){
-   body{
+@media (max-width:760px){
+   body>*{
          overflow-x: hidden;
+    }
+    .landing-page{
+        padding-top: 5rem ;
     }
   .video-container{
       position: relative;
-      padding: 4rem 0;
-      margin-top: 5rem;
+       padding: 4rem 0;
+     
   }
   video.video{
       position: inherit;
@@ -148,4 +152,27 @@
 }
 
     
+}
+
+@media screen and (min-device-width: 761px) and (max-device-width: 880px) { 
+  body>*{
+      overflow-x: hidden;
+  }
+    .video-container{
+        height: auto;
+        position: relative;
+    }
+
+    .main-heading-wrapper{
+        bottom: 9rem;
+    }
+}
+@media screen and (min-device-width: 881px) and (max-device-width: 1380px) { 
+    .video-container{
+        height: auto;
+        position: relative;
+    }
+    .main-heading-wrapper{
+        bottom: 9rem;
+    }
 }

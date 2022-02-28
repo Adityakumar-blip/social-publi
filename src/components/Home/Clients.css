@@ -76,7 +76,7 @@
 .client-logo img:hover{
     transform: translateY(-10px);
 }
-@media (max-width:600px){
+@media (max-width:760px){
 
     #clients .client-logo {
         

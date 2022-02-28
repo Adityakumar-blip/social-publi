@@ -139,7 +139,7 @@ filter: gray;
     transition: .5s;
     opacity: 1;
 }
-@media (max-width:600px){
+@media (max-width:760px){
     .about-service{
        
         width: 100%;
@@ -156,23 +156,18 @@ filter: gray;
         font-size: 1rem;
     
     }
-      .service-container div{
-        
-        height: 15rem;    
+    .service-container>div{
+        height: auto;
     }
-    
-.service-section{
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem ;
-    text-align: center;
-    font-style: italic;
-    
- }
+
+      .double-container >.service-section{
+          width: 50vw;
+          margin: 0;
+          height:15rem;
+          padding: 0;
+      }
  .service-section>h1{
-     font-size: 1.5rem;
+     font-size:6vw;
      padding: 1rem;
  }
 
@@ -182,4 +177,17 @@ filter: gray;
 
     
     
+}
+
+@media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
+    .service-container>div{
+        height: auto;
+    }
+
+      .double-container >.service-section{
+          width: 50vw;
+          margin: 0;
+          height:15rem;
+          padding: 0;
+      }
 }

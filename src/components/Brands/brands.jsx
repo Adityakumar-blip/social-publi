@@ -38,7 +38,7 @@ export default class brands extends Component {
                   </Fade>
                 </div>
               </div>
-              <div className='col-md-6 col-sm-12'>
+              <div className='col-md-6 col-sm-12 img-cont'>
                 <div className='brand-body'>
                   <Zoom>
                   <img src={brand} alt=""/>
