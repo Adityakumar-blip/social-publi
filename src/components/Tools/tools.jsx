@@ -47,7 +47,7 @@ export default class tools extends Component {
             </Fade>
           </div>
           <div style={{margin:0}} className='row'>
-            <div className='col-md-6 col-sm-6'>
+            <div className='col-md-6 col-sm-6 organic-text'>
               <div className='slogan-body'>
               <Fade left>
               <p>Every brand wants to get on the Instagram ride to not only reach but connect with their followers and increase engagement. Brands from diverse industries are aiming to reach millennials and Gen Z through Instagram campaigns. It has become a great platform to build communities, engage audiences and increase sales through the platform.
@@ -70,7 +70,7 @@ export default class tools extends Component {
           </div>
           <Fade bottom big cascade>
           <div className='row card-container'>
-            <div className='col-md-6'>
+            <div className='col col-lg-4 col-md-6'>
               <div className='power-card'>
                  <div className='card py-3 py-sm-0 card-cont'>
                   <img src={campaign} alt="campaign" />
@@ -84,7 +84,7 @@ export default class tools extends Component {
                 </div>
               </div>
             </div>
-            <div className='col-md-6'>
+            <div className='col col-lg-4 col-md-6'>
               <div className='power-card'>
                 <div className='card py-3 py-sm-0 card-cont'>
                   <img src={insights} alt="campaign" />
@@ -98,7 +98,7 @@ export default class tools extends Component {
                 </div>
               </div>
             </div>
-            <div className='col-md-6'>
+            <div className='col col-lg-4 col-md-6'>
               <div className='power-card'>
                 <div className='card py-3 py-sm-0 card-cont'>
                   <img src={search} alt="campaign" />
