@@ -189,7 +189,7 @@
   transition: ease-in-out;
 }
 
-@media (max-width:700px){
+@media (max-width:760px){
 
   .text-container{
     padding: 0;
@@ -197,14 +197,16 @@
   }
     .big-heading{
       padding: 0;
+      
     }
-
+     
     .big-heading>h1{
       font-size:1.8rem;
     line-height: normal;
     letter-spacing: -.25px;
     padding-bottom: 0;
     font-weight: 500;
+     
     }
    .small-heading{
      padding: 1rem 0;

@@ -54,12 +54,15 @@
      font-size: small;
   }
    
-  @media (max-width:600px){
+  @media (max-width:760px){
 
     .footer-wrapper>h1{
       margin: 0;
       padding: 1rem ;
 
+    }
+    .column-wrapper{
+      padding: 3rem;
     }
     .column-wrapper>.column{
       padding: 1rem;
@@ -75,5 +78,23 @@
       padding: 1rem 1rem;
       font-size: 10px;
       color: #fff;
+    }
+  }
+  @media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
+   
+    .footer-wrapper >h1{
+     
+      color: #fff;
+      text-align: center;
+      font-size: 2.5rem;
+       padding: 2rem  3rem;
+    }
+    .link{
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    .column-wrapper{
+      padding: 3rem;
     }
   }
