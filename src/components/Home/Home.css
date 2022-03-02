@@ -132,10 +132,7 @@ color: white;
 
 
 @media (max-width:760px){
-   body>*{
-
-@media (max-width:600px){
-   *{
+   body>* {
 
          overflow-x: hidden;
          
@@ -176,7 +173,7 @@ color: white;
         bottom: 9rem;
     }
 }
-@media screen and (min-device-width: 881px) and (max-device-width: 1380px) { 
+@media screen and (min-device-width: 881px) and (max-device-width: 1280px) { 
     .video-container{
         height: auto;
         position: relative;

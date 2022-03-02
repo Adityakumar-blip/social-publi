@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 
@@ -9,52 +9,53 @@ export default class contactUs extends Component {
     return (
       <>
         <div className="row contactUs-container">
-            <Fade left  cascade>
-          <div className=" col col-sm-12 otherOptionsToConnect">
-            <div>
-              {" "}
-              <h1 style={{color:'black'}} >Contact Us</h1>
-            </div>
-            <div>
-              <p  >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quisquam deleniti, vero, eius tempore doloremque exercitationem
-                nihil dolores quidem reprehenderit perspiciatis nisi et?
-                Adipisci minima sunt quia 
-              </p>
-            </div>
-            <div>
-              <h2>+91 9804340458</h2>
-            </div>
-            <div>
-              <a href="http://www.google.com">
-                <i style={{color:'black'}} className="fas fa-mail-bulk fa-4x"></i>
-              </a>
+          <div class="col col-lg-3 col-md-6 col-xm-12 col-sm-6">
+            <div className="contact-type">
+              <h1>I am  </h1>
+              <h1> <strong> Brand</strong></h1>
+              <button>
+                <Link to='/brandform' >Connect</Link>
+              </button>
             </div>
           </div>
-            </Fade>
-          <div className="col col-sm-12 category-container">
-          <div class="row category">
-  <div class="col-sm-6">
-    <div class="card category-card">
-      <div class="card-body category-body">
-        <h5 class="card-title card-heading">I am <br/> <span>Influencer</span></h5>
-        <p class="card-text card-para">Coonect with the variety of brands through socialpubli and gain exposure to the larger audience. Become a part of socialpubli  <span>"Lets go viral"</span></p>
-        <Link to="/influencerpage" class="btn btn-primary category-btn">Connect</Link>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card category-card">
-      <div class="card-body category-body">
-        <h5 class="card-title card-heading">I am <br/> <span>Brand</span></h5>
-        <p class="card-text card-para">Want your favourite influencer for marketing campaigns, contact us and we'll do it for you.Let's make your campaign succesfull</p>
-        <Link to="/brandform" class="btn btn-primary category-btn">Connect</Link>
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="col col-lg-3 col-md-6 col-xm-12 col-sm-6">
+            <div className="contact-type">
+              <h1>I am  </h1>
+              <h1> <strong>Influencer</strong></h1>
+              <button>
+                <Link to='/influencerpage' > Connect</Link>
+              </button>
+            </div>
+
           </div>
+          <div className=" col col-lg-6 col-md-6 col-xm-12 col-sm-12 otherOptionsToConnect">
+
+            <div className="text-cont">
+              <div>
+                {" "}
+                <h1   style={{color:'#5463FF'}} >Contact Us</h1>
+              </div>
+              <div>
+                <p  >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Quisquam deleniti, vero, eius tempore doloremque exercitationem
+                  nihil dolores quidem reprehenderit perspiciatis nisi et?
+                  Adipisci minima sunt quia
+                </p>
+              </div>
+              <div>
+               <a style={{textDecoration:'none', color:'white'}} href="https://wa.me/918859580672?text=hi"> <h2>+91 9804340458</h2></a>
+              </div>
+              <div>
+                <a style={{textDecoration:'none' , color:'white', fontSize:'1.2rem'}} href="mailto:socialpubli.work@gmail.com?subject = Feedback&body = Message">
+                 
+                    socialpubli.work@gmail.com
+                </a>
+               
+              </div>
+            </div>
+          </div>
+
         </div>
       </>
     );

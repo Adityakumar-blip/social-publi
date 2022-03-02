@@ -34,7 +34,12 @@
 .tools-container>div{
     margin: 0;
 }
-  
+.organic-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .tools-body h2{
     text-align: center;
     text-align: left;
@@ -77,8 +82,8 @@
      padding: 1rem 0;
  }
 .slogan-body{
-  padding: 1.5rem;
-  display: flex;
+    padding: 1.5rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -135,7 +140,7 @@
     border-radius: 10px;
     margin-left: 2.5rem;
     box-shadow: 5px 5px 5px 5px rgba(46, 46, 46, 0.1);
-   transition: transform 0.2s;   
+    transition: transform 0.2s;   
 }
 
 .power-card:hover{
@@ -249,6 +254,8 @@
  body>*{
    overflow-x: hidden;
  }
- 
+ .power-card{
+   margin:2rem 0.8rem;
+ }
 
 }

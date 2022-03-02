@@ -154,12 +154,7 @@ export default class extends Component {
                 <h5></h5>
             </div>
         </div>
-        <div className="Lets-work-together">
-          <button className="btn  ">
-            <h3 style={{ color: "white" }}>Let's Work Together ➨</h3>
-          </button>
-        </div>
-        
+         
       </>
     );
   }
