@@ -13,12 +13,13 @@
     background-color: black;
     width: 100%;
     overflow: hidden;
+   
 }
 
 .social-body{
     align-items: center;
 }
-.social-title{
+.social-body h2{
     align-items: center;
     text-transform:inherit;
     font-family: 'Lora', sans-serif;
@@ -27,7 +28,11 @@
     color: aliceblue;
     font-size: 50px;
 }
- 
+
+.sec-img{
+    height: 100%;
+    width: 100%;
+}
 
 @media (max-width:760px){
     .social-body h2{
@@ -78,7 +83,7 @@
      }
     
 }
-@media screen and (min-device-width: 881px) and (max-device-width: 1380px) { 
+@media screen and (min-device-width: 881px) and (max-device-width: 1280px) { 
     .social-body h2{
         
         line-height: 1.7;

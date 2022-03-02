@@ -36,14 +36,12 @@ export default class contactUs extends Component {
             <div className="text-cont">
               <div>
                 {" "}
-                <h1   style={{color:'#5463FF'}} >Contact Us</h1>
+                <h1 style={{color: '#4158D0'}}   className="contactuss" >Contact Us</h1>
               </div>
+             
               <div>
-                <p  >
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Quisquam deleniti, vero, eius tempore doloremque exercitationem
-                  nihil dolores quidem reprehenderit perspiciatis nisi et?
-                  Adipisci minima sunt quia
+                <p style={{fontSize:'2rem'}} >
+                   While we're good with smoke signals, there are simpler ways for us to get in touch.
                 </p>
               </div>
               <div>

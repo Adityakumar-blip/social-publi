@@ -2,7 +2,11 @@
 .influencerPage-wrapper{
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,239,132,1) 0%, rgba(247,198,169,1) 54.2%, rgba(21,186,196,1) 100.3% );
     animation: gradient 10s ease infinite;
-    padding: 8rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes gradient {
@@ -17,10 +21,10 @@
     }
 }
 
+ 
 .infy-heading{
-    height: 50vh;
+    width: 100%;
 }
-
 .infy-heading h1{
     font-size: 6rem;
     text-align: center;
@@ -38,9 +42,8 @@
 
 .form-wrapper{
     background-color: aquamarine;
-    height: 130vh;
-    width: 50vw;
-    margin-left: 13rem;
+    margin: 0;
+   
     border-radius: 10px;
     padding: 5rem;
     overflow: hidden;
@@ -119,4 +122,63 @@
     font-weight: 500;
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:760px){
+
+     .infy-heading h1{
+         font-size: 3rem;
+         text-align: center;
+     }
+     .infy-heading p{
+         font-size: 1.2rem;
+         font-weight: 500;
+         color:rgb(56, 56, 56);
+          
+        }
+        .form-wrapper{
+            width: calc( 100vw - 4rem );
+            margin: 0;
+            height: auto;
+        }
+        .infy-heading{
+            height: auto;
+            padding: 1rem 0;
+
+        }
+        .form-wrapper .instaId{
+            padding: 0;
+            margin: 0;
+            height: auto;
+        }
+
+}
+@media screen and (min-device-width: 761px) and (max-device-width: 1080px) { 
+
+    .infy-heading h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .infy-heading p{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color:rgb(56, 56, 56);
+         
+       }
+       .form-wrapper{
+           width: calc( 100vw - 14rem );
+           margin: 0;
+           height: auto;
+       }
+       .infy-heading{
+           height: auto;
+           padding: 1rem 0;
+
+       }
+       .form-wrapper .instaId{
+           padding: 1rem 0;
+           margin: 1rem;
+           height: auto;
+       }
+ 
 }

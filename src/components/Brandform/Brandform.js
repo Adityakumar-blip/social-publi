@@ -75,7 +75,7 @@ const Brandform = () => {
           <label>Mobile<span>*</span></label>
         </div>
         <div class="form-floating message-wrapper">
-         <textarea class="form-control message" name='message' placeholder="Leave a comment here" id="floatingTextarea2" value={userData.message} onChange={postUserData} ></textarea>
+         <textarea style={{overflowY:'scroll'}} class="form-control message" name='message' placeholder="Leave a comment here" id="floatingTextarea2" value={userData.message} onChange={postUserData} ></textarea>
          <label for="floatingTextarea2">Message</label>
         </div>
         <div className="genre" required >
@@ -87,7 +87,7 @@ const Brandform = () => {
          
       </div>
     </div>
-</>
+</> 
   )
 }
 

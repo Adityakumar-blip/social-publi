@@ -14,15 +14,15 @@ const Socialsection = () => {
         <div className="social-container">
             <div className="row g-0">
              <div className="col-md-6 colum">
-            <div className="social-body">
+            <div  className="social-body">
                 <Fade left >
-                <h2 className="social-title">THE WORLD'S TOP INFLUENCER MARKETING AGENCY HAS BECOME ONE OF THE GLOBE'S FASTEST GROWING FULL SERVICE MARKETING FIRMS.
+                <h2   className="social-title">THE WORLD'S TOP INFLUENCER MARKETING AGENCY HAS BECOME ONE OF THE GLOBE'S FASTEST GROWING FULL SERVICE MARKETING FIRMS.
                 </h2>
                 </Fade>
             </div>
         </div>
             <div className="col-md-6 colum img-container">
-                <img src={img} class="img-fluid rounded-start" alt="..."/>
+                <img src={img} class="img-fluid  " alt="..."/>
             </div>
     </div>
     </div>

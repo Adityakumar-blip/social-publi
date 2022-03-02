@@ -8,7 +8,7 @@ import Clients from './Clients';
 import Footer from '../Footer'; 
 import Newsletter from './Newsletter';
 import {Link} from 'react-router-dom'
-
+ import Headline from './headline.jsx'
 
 const Home = () => {
   return (
@@ -34,7 +34,7 @@ const Home = () => {
     </section>
 
         <Socialsection/>
-
+<Headline/>
         <Carousel/>
 
         <Clients/> 
