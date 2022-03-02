@@ -6,6 +6,7 @@
 
 }
  
+ 
 .contactUs-container{
     width: 100%;
     height: 56rem;
@@ -39,108 +40,129 @@
     font-size: 1rem;
 }
 
-.category-card .category-btn{
-    width: 100%;
-    background-color: rgb(149, 149, 240);
-    border: 1px  rgb(149, 149, 240) ;
-    color: black;
-    font-weight:500 ;
+.text-cont{
+     padding: 3rem;
 }
 
-.category-card .category-btn:hover{
-    background-color: #1A4E5C;
-    animation: 2s ease-out;
+.text-cont>*{
+    padding: 2rem 0;
     color: white;
 }
 
-.category-card .category-btn:active{
-    background: transparent;
-    border: 2px #1A4E5C;
+.contact-type{
+     width: 100%;
+     color: black;
+     margin: 3rem 1rem ;
+     background : #D6E5FA;
+     padding: 2rem 1rem ;
+     border-radius: 10px;
+     transition: transform 0.4s ;
+ }
+
+.contact-type:hover{
+    background  : linear-gradient(transparent, #BAABDA);
+    transform: scale(1.1);
+    animation: 0.4s ease-out;
+    color: white;
+}
+.contact-type:hover button{
+    background-color: white;
+    
+}
+.contact-type:hover button>*{
     color: black;
-    font-weight: 500;
 }
-
-.category-card h5 span{
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+.text-cont>div> h1{
+    font-size: 4rem;
+    font-family: 'Lora';
+     color: white;
 }
+.contact-type>*{
+    margin: 1rem 0;
+   
 
-.leftRight{
-    display: flex;
+}
+ .contact-type>h1>strong{
+     font-size: 3.3rem;
+ }
+.contact-type button{
     width: 100%;
-    padding: 1rem 3rem 0;
-}
-.left {
-     width: 50%;
-}
-.right{
-    width: 50%;
-}
-
-input{
-    width: 90%;
+    height: 3.4rem;
+    border: none;
+    background-color: black;
+   border-radius: 10px;
+   margin-top: 1rem;
+   margin-bottom: -1rem;
 }
 
-.company
-{
-    padding: 1rem 1rem 1rem 3rem;
-    width: 100%;
+.contact-type button>*{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+
 }
 
- 
-.TextPlace{
-    margin-left:3rem;
-    margin-top: 1.5rem 0;
+@media (maxWidth:760px){
+
+     
+.contactUs-container{
+    margin: 0;
+    padding: 2rem  ;
+    background: url('https://images.unsplash.com/photo-1502639625928-9e0198ae7dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGJhY2tncm91bmR8ZW58MHwwfDB8YmxhY2t8&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 
-form>div{
-    width: 100%;
+.text-cont{
+     padding: 3rem;
 }
 
-textarea{
-    width: 81%;
-    border-radius: 0.5rem;
-}
-
-.submitbtn{
-    margin :0.5rem 0.5rem 5rem  3rem;
-    width: 81.7%;
-}
-
-.left>div{
-    margin: 1.5rem 0;
-}
-
-.right>div{
-    margin: 1.5rem 0;
-}
-
-.otherOptionsToConnect{
-    width: 45%;
-   padding-top: 3rem;
-    padding-right: 3rem;
-    padding-left: 6rem;
-    text-align: end;
-   font-family: 'poppins';
-    color: #000;
-}
-
-.otherOptionsToConnect h1{
-    font-family:'Lora', sans-serif;
-}
-
-.otherOptionsToConnect>div{
+.text-cont>*{
     padding: 2rem 0;
-
+    color: white;
 }
 
-.otherOptionsToConnect>div>p{
-    color:black;
+.contact-type{
+     width: 100%;
+     color: black;
+     margin: 3rem 1rem ;
+     background : rgb(201, 198, 198);
+     padding: 2rem 1rem ;
+     
+     
+ }
+ 
+.text-cont>div> h1{
+    font-size: 4rem;
+    font-family: 'Lora';
+     color: white;
+}
+.contact-type>*{
+    margin: 1rem 0;
+   
+
+}
+ .contact-type>h1>strong{
+     font-size: 3.3rem;
+ }
+.contact-type button{
+    width: 100%;
+    height: 3.4rem;
+    border: none;
+    background-color: black;
+   border-radius: 10px;
+   margin-top: 1rem;
+   margin-bottom: -1rem;
 }
 
-input{
-    border-radius: 0.5rem;
-    border: 1px solid #1A4E5C;
+.contact-type button>*{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
     
 }

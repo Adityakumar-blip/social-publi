@@ -26,18 +26,18 @@ function TestimonialCol(props) {
           <Fade right big cascade>
           <div id="1" className="testimonial-col one">
             <div className="small-influencer">
-              <a href={workData[props.Id][1].link} className=" influencer">
+              <Link to={workData[props.Id][1].link} className=" influencer">
                 <img src={workData[props.Id][1].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
               <h5 className="influencer-title">
                 {workData[props.Id][1].influencerTitle}
                 <br />➨
               </h5>
             </div>
             <div id="2" className="small-influencer">
-              <a href={workData[props.Id][2].link} className=" influencer">
+              <Link to={workData[props.Id][2].link} className=" influencer">
                 <img src={workData[props.Id][2].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
               <h5 className="influencer-title">
                 {workData[props.Id][2].influencerTitle}
                 <br />➨
@@ -51,18 +51,18 @@ function TestimonialCol(props) {
             <Fade left big cascade>
           <div id="2" className="testimonial-col">
             <div className="small-influencer">
-              <a href={workData[props.Id][1].link} className=" influencer">
+              <Link to={workData[props.Id][1].link} className=" influencer">
                 <img src={workData[props.Id][1].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
               <h5 className="influencer-title">
                 {workData[props.Id][1].influencerTitle}
                 <br />➨
               </h5>
             </div>
             <div id="1" className="small-influencer">
-              <a href={workData[props.Id][2].link} className=" influencer">
+              <Link to={workData[props.Id][2].link} className=" influencer">
                 <img src={workData[props.Id][2].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
               <h5 className="influencer-title">
                 {workData[props.Id][2].influencerTitle}
                 <br />➨
@@ -73,9 +73,9 @@ function TestimonialCol(props) {
           <div id="0" className="testimonial-col">
             <Fade right>
             <div className="big-influencer">
-              <a href={workData[props.Id][0].link} className="  influencer">
+              <Link to={workData[props.Id][0].link} className="  influencer">
                 <img src={workData[props.Id][0].imgLink} alt="" srcSet="" />
-              </a>
+              </Link>
                <h5 className="influencer-title">
                 {workData[props.Id][0].influencerTitle}
                 <br />➨

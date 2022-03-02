@@ -10,8 +10,8 @@ const Navbar = () =>{
     const [show, setShow] = useState(false);
     return(
         <>
-        <section>
-    <div className='nav-wrapper container-fluid nav-bg '>
+        <section style={{position:'sticky' ,top:'0',zIndex:'111'}}>
+    <div  className='nav-wrapper container-fluid nav-bg  '>
             <div className='row'>
         <nav className=" navbar nav-container navbar-expand-lg navbar-light  ">
             <div className="container-fluid">
