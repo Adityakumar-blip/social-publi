@@ -69,8 +69,8 @@ const Newsletter = () => {
                 <label for="from">
                 <i class="ion-location"></i>
                 </label>
-                <input type="email" name="newsletter" value={userData.newsletter} placeholder="Enter Your Email" onChange={postUserData}/>
-                <input className='submit' type="submit" onClick={submitData} value="Subscribe"/>
+                <input type="email" className='email-data' name="newsletter" value={userData.newsletter} placeholder="Enter Your Email" onChange={postUserData}/>
+                <input className='submit ' type="submit" onClick={submitData} value="Subscribe"/>
                </form></div>
                 </Fade>
               </div>

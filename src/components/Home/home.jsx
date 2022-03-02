@@ -22,8 +22,8 @@ const Home = () => {
             <span>Done Right</span></h1>
             <p className="main-para slide">As an Influencer Marketing Agency, we create the most viral,<br/> 
             captivating & ROI-focused social media influencer<br/> campaigns for brands globally.</p>
-            <button type="button" class="glow sliding">
-            <Link className='nav-link' to='/influencerpage'>I'm influencer</Link>
+            <button className='glow slide'>
+              <Link to='/influencerpage' className='glow-link'> I am Influencer</Link>
             </button>
             </div>
         <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
