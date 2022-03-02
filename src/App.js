@@ -14,6 +14,7 @@ import LetsTalk from './components/LetsTalk';
 import About from './components/About/About.js';
 import Influencerpage from './components/Influencerpage/Influencerpage'
 import Brandform from './components/Brandform/Brandform'
+ 
 function App() {  
   return (
     <>
@@ -31,7 +32,7 @@ function App() {
             <Route path='/influencer/testimonial' element={<TestimonialProfile/>}/>
             <Route path='/influencerpage' element={<Influencerpage/>}/>
             <Route path='/brandform' element={<Brandform/>}/>
-
+            
             </Routes>
         <LetsTalk/>
         <Footer/>

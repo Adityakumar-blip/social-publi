@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headLine-container{
+    
+    width: 100%;
+   
+}
+
+.headLines{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.headline{
+    font-family:   sans-serif;
+    text-decoration: none;
+    font-size: 4.2rem;
+    font-weight: 850;
+    font-style: italic;
+    -webkit-text-stroke-color: black;
+   
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1.5px; 
+    
+}
+
+ 
+.headline:hover{
+    -webkit-text-fill-color: rgb(99, 99, 248);
+    -webkit-text-stroke-color: rgb(99, 99, 248);;
+
+}
