@@ -5,8 +5,8 @@ import {FiArrowDown} from 'react-icons/fi';
 import Socialsection from './Socialsection'
 import Carousel from './Carousel';
 import Clients from './Clients';
-import Footer from '../Footer'; 
-import Newsletter from './Newsletter';
+ import Newsletter from './Newsletter';
+ import Headline from './Headline.jsx';
 import {Link} from 'react-router-dom'
 
 
@@ -34,7 +34,7 @@ const Home = () => {
     </section>
 
         <Socialsection/>
-
+       < Headline/>
         <Carousel/>
 
         <Clients/> 
