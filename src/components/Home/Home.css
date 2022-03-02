@@ -20,7 +20,7 @@ background-color: #000;
     position:relative;
      
     width: 100%;
-   height: 45rem;
+     height: 45rem;
     padding: 0%;
 
 }
@@ -34,6 +34,7 @@ background-color: #000;
     position: absolute;
     bottom: 22rem;
     left: 3rem;
+    z-index: 1;
     color: white;
 }
 
@@ -47,12 +48,12 @@ background-color: #000;
 .main-para{
     font-family: 'Playfair Display', sans-serif;
     font-size: 18px;
-color: white;
+    color: white;
 }
 
 
 
-/* .glow {
+.glow {
     width: 220px;
     height: 50px;
     border: none;
@@ -63,9 +64,14 @@ color: white;
     position: relative;
     z-index: 0;
     border-radius: 10px;
-} */
-
-/* .glow:before {
+}
+ .glow-link{
+     text-decoration: none;
+     color: white;
+     font-size: 1.3rem;
+     
+ }
+.glow:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -126,7 +132,7 @@ color: white;
         transform: translate(0px);
         opacity: 1;
     }
-} */
+}  
 
 
 

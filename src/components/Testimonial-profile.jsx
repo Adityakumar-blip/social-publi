@@ -19,6 +19,7 @@ export default class extends Component {
         </div>
 
         <div className="influencer-about">
+          <div className="col col-lg-6 col-sm-12">
           <div
             style={{
               width: "100px",
@@ -40,11 +41,15 @@ export default class extends Component {
               Perspiciatis, amet cum.
             </h1>
           </div>
+          </div>
+          <div className="col col-lg-6 col-sm-12">
+
           <div className="small-pic">
             <img
               src="https://media.istockphoto.com/photos/woman-does-makeup-while-recording-live-stream-with-video-player-picture-id1141423314?b=1&k=20&m=1141423314&s=170667a&w=0&h=3l8hUXWaFGjnoH-WE8jTAuq56-4q8RfHZOIYCD5CCDc="
               alt=""
             />
+          </div>
           </div>
         </div>
 
@@ -154,7 +159,12 @@ export default class extends Component {
                 <h5></h5>
             </div>
         </div>
-         
+        <div className="Lets-work-together">
+          <button className="btn  ">
+            <h3 style={{ color: "white" }}>Let's Work Together ➨</h3>
+          </button>
+        </div>
+        
       </>
     );
   }

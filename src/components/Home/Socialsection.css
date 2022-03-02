@@ -13,6 +13,7 @@
     background-color: black;
     width: 100%;
     overflow: hidden;
+   
 }
 
 .social-body{
@@ -82,7 +83,7 @@
      }
     
 }
-@media screen and (min-device-width: 881px) and (max-device-width: 1380px) { 
+@media screen and (min-device-width: 881px) and (max-device-width: 1280px) { 
     .social-body h2{
         
         line-height: 1.7;

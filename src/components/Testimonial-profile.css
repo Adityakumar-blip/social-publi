@@ -8,7 +8,7 @@
 
 .influencer-image-container>img{
     width: 100%;
-    height: 50rem;
+    
 }
 .influencer-image-container>h4{
     position: absolute;
@@ -31,7 +31,7 @@
 
 .influencer-about>.text{
     width: 60%;
-    height: 50rem;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
     padding-left: 5rem;
 }
 
-.influencer-about>.small-pic{
+.influencer-about>div>.small-pic{
     width: 40%;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@
     padding-bottom: 1rem;
    
 }
-.influencer-about>.small-pic>img{
+.influencer-about>div>.small-pic>img{
     width:75%;
      
 }
@@ -171,4 +171,27 @@
   .prev>img{
     width:100%;
     height: 25rem;
+  }
+@media (maxWidth:760px){
+
+
+    .influencer-image-container{
+        height: auto;
+
+    }
+
+    .influencer-image-container>img{
+        height: auto;
+        width: 100vw;
+    }
+     
+    .influencer-image-container>h4{
+        
+        left: 5rem;
+        bottom: 5rem;
+       
+    }
+     
+ 
+  
   }

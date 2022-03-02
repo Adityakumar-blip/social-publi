@@ -78,7 +78,12 @@
   input[type="search"] {
     flex-basis: 500px;
   }
-
+    input.submit.submit-data{
+      width: 4rem;
+    }
+    .email-data{
+      width: 15rem;
+    }
   
 @media (max-width:760px){
      
@@ -112,9 +117,10 @@
       
        padding-top: 0;
      }
-     .flex-form input[type="submit"] {
+     input.submit.submit-data{
        
       width: 9rem;
+
   }
 }
 @media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
