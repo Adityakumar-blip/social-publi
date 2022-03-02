@@ -18,7 +18,7 @@
 .social-body{
     align-items: center;
 }
-.social-body h2{
+.social-title{
     align-items: center;
     text-transform:inherit;
     font-family: 'Lora', sans-serif;
@@ -27,11 +27,7 @@
     color: aliceblue;
     font-size: 50px;
 }
-
-.sec-img{
-    height: 100%;
-    width: 100%;
-}
+ 
 
 @media (max-width:760px){
     .social-body h2{

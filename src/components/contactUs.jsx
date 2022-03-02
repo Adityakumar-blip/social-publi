@@ -8,29 +8,29 @@ export default class contactUs extends Component {
   render() {
     return (
       <>
+         
         <div className="row contactUs-container">
-            <Fade left  cascade>
-          <div className=" col col-sm-12 otherOptionsToConnect">
-            <div>
-              {" "}
-              <h1 style={{color:'black'}} >We're Here</h1>
+            
+          
+          <div class="col col-lg-3 col-md-6 col-xm-12 col-sm-6">
+            <div className="contact-type">
+              <h1>I am  </h1>
+              <h1> <strong> Brand</strong></h1>
+              <button>
+                <Link to='/brandform' >Connect</Link>
+              </button>
             </div>
-            <div>
-              <p  >
-                While we're good with smoke signals, there are simpler ways for us to get in touch
-              </p>
-            </div>
-            <div>
-              <h2>+91 9804340458</h2>
-            </div>
-            <div>
-              <a href="http://www.google.com">
-                <i style={{color:'black'}} className="fas fa-mail-bulk fa-4x"></i>
-              </a>
+           </div>
+          <div class="col col-lg-3 col-md-6 col-xm-12 col-sm-6">
+            <div className="contact-type">
+              <h1>I am  </h1>
+              <h1> <strong>Influencer</strong></h1>
+              <button>
+                <Link to='/influencerpage' > Connect</Link>
+              </button>
             </div>
 
           </div>
-          </Fade>
           <div className=" col col-lg-6 col-md-6 col-xm-12 col-sm-12 otherOptionsToConnect">
 
             <div className="text-cont">
@@ -58,8 +58,8 @@ export default class contactUs extends Component {
               </div>
             </div>
           </div>
-
-        </div>
+</div>
+        
       </>
     );
   }

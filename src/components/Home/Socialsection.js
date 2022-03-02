@@ -13,7 +13,7 @@ const Socialsection = () => {
         <div className='social-row-wrapper'>
         <div className="social-container">
             <div className="row g-0">
-            <div className="col-md-6 colum">
+             <div className="col-md-6 colum">
             <div className="social-body">
                 <Fade left >
                 <h2 className="social-title">THE WORLD'S TOP INFLUENCER MARKETING AGENCY HAS BECOME ONE OF THE GLOBE'S FASTEST GROWING FULL SERVICE MARKETING FIRMS.
