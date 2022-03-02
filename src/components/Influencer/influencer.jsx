@@ -149,7 +149,7 @@ export default class work extends Component {
             <Fade right>
             <h6>
             Our talented team is responsible for having created some of the most viral and successful campaigns for our clients globally. We continually aim to exceed expectations, make lasting memories, and amplify brands to their highest potential. Our marketing mix only contains services with proven ROI, backed by analytics.    </h6>
-            <a href=""> ➨ Work With Us</a>
+            <Link to="/contactUs"> ➨ Work With Us</Link>
             </Fade>
           </div>
         </div>

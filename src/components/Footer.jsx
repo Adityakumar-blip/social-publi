@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './footer.css'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
+import { Link } from 'react-router-dom'
 
 export default class Footer extends Component {
   render() {
@@ -15,10 +16,13 @@ export default class Footer extends Component {
           <Fade left cascade>
            <div className='column col-lg-4  col-sm-4'>
                <a  href=""><h1  >SocialPubli</h1></a>
-               <a href="">Home</a>
-               <a href="">Influencer</a>
-               <a href="">Brand</a>
-               <a href="">Our Work</a>
+               <Link to="/">Home</Link>
+               <Link to="/services">Services</Link>
+               <Link to="/influencer">Work</Link>
+               <Link to="/brands">Brand</Link>
+               <Link to='/tools'>Tools</Link>
+               <Link to="/about">About</Link>
+               <Link to="/contactUs">Contact Us</Link>
            </div>
            </Fade>
            <div className='  col-lg-8 col-sm-8  Links' > 

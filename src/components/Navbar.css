@@ -20,6 +20,10 @@
     font-family: 'Lora',sans-serif;
 }
 
+.navbar li a:active{
+    color: red;
+}
+
 .navbar li a:hover{
     color: #1c6dd0;
 }

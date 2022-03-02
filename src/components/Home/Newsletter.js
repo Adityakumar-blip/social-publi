@@ -5,15 +5,42 @@ import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 
 const Newsletter = () => {
-    const [input,setInput] =  useState("");
-    const inputhandler = (e) => {
-        setInput(e.target.value);
-    };
-
-    const submitHandler = (e) =>{
-        e.preventDefault();
-        
+  const [userData, setUserData] = useState({
+    newsletter:"",
+    });
+    
+    let name, value;
+    function postUserData(event) {
+      name = event.target.name;
+      value = event.target.value;
+  
+      setUserData({ ...userData, [name]:value })
     }
+  
+    // connect to firebase
+    const submitData = async(event) => {
+      event.preventDefault();
+      const { 
+        newsletter,
+      } = userData;
+      const res = await fetch(
+        'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/userDataRecords.json',{
+          method: "POST",
+          headers:{
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify({
+            newsletter,
+          }),
+        }
+        );
+  
+        if(res) {
+          alert("Data Stored")
+        }else {
+          alert("Please fill the Data")
+        }
+    };
   return (
     <>
     <section>
@@ -38,12 +65,12 @@ const Newsletter = () => {
                 </div>
                 </div>
                 <div className='form-contain '>
-            <form  class="flex-form flex-form-container">
+            <form method='POST' class="flex-form flex-form-container">
                 <label for="from">
                 <i class="ion-location"></i>
                 </label>
-                <input type="email" placeholder="Enter Your Email"/>
-                <input className='submit' type="submit" value="Subscribe"/>
+                <input type="email" name="newsletter" value={userData.newsletter} placeholder="Enter Your Email" onChange={postUserData}/>
+                <input className='submit' type="submit" onClick={submitData} value="Subscribe"/>
                </form></div>
                 </Fade>
               </div>

@@ -13,14 +13,11 @@ export default class contactUs extends Component {
           <div className=" col col-sm-12 otherOptionsToConnect">
             <div>
               {" "}
-              <h1 style={{color:'black'}} >Contact Us</h1>
+              <h1 style={{color:'black'}} >We're Here</h1>
             </div>
             <div>
               <p  >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quisquam deleniti, vero, eius tempore doloremque exercitationem
-                nihil dolores quidem reprehenderit perspiciatis nisi et?
-                Adipisci minima sunt quia 
+                While we're good with smoke signals, there are simpler ways for us to get in touch
               </p>
             </div>
             <div>

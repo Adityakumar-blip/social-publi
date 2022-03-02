@@ -64,10 +64,7 @@ export default class influencer extends Component {
                     style={{ fontWeight: "350", lineHeight: "2" }}
                     className="texts"
                   >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Suscipit, laboriosam porro a eaque, inventore officia commodi
-                    blanditiis velit ab tempore maxime, sapiente quisquam iusto
-                    facilis repellendus adipisci vero? Cupiditate aliquid sed ipsum.
+                    
                   </h5>
                   <div className="lets-work">
                     <Link
