@@ -172,7 +172,7 @@
     width:100%;
     height: 25rem;
   }
-@media (maxWidth:760px){
+@media (max-Width:760px){
 
 
     .influencer-image-container{
