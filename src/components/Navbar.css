@@ -74,7 +74,24 @@
 
 @media (max-width:760px){
     .navbar-brand{
-        font-size: 20px;
+        font-size: 10px;
+        width: 2rem;
+        margin: left 0;;
+    }
+
+    .navbar-brand>img{
+        margin-left: 0.5rem;
+    }
+    
+
+    .collapse{
+        text-align: center;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .logo-cont{
+        padding: 0;
     }
     
  

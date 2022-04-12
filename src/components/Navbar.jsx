@@ -13,8 +13,8 @@ const Navbar = () =>{
         <section style={{position:'sticky' ,top:'0',zIndex:'101'}}>
     <div  className='nav-wrapper container-fluid nav-bg  '>
             <div className='row'>
-        <nav className=" navbar nav-container navbar-expand-lg navbar-light  ">
-            <div className="container-fluid">
+        <nav className=" navbar nav-container navbar-expand-lg navbar-light nav-cont  ">
+            <div className="container-fluid logo-cont">
                 <Link className="navbar-brand" to="/">
                 <img src={brand} alt=".."/>
                 </Link>
