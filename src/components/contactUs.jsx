@@ -36,7 +36,7 @@ export default class contactUs extends Component {
             <div className="text-cont">
               <div>
                 {" "}
-                <h1 style={{color: '#4158D0'}}   className="contactuss" >Contact Us</h1>
+                <h1 className="contactuss" >Contact Us</h1>
               </div>
              
               <div>
@@ -48,7 +48,7 @@ export default class contactUs extends Component {
                <a style={{textDecoration:'none', color:'white'}} href="https://wa.me/919723232454?text=hi"> <h2>+91 9723232454</h2></a>
               </div>
               <div>
-                <a style={{textDecoration:'none' , color:'white', fontSize:'1.5rem'}} href="mailto: influencermarketing@soicalpubli.co.in?subject = Feedback&body = Message">
+                <a className="contact-email" style={{textDecoration:'none' , color:'white', fontSize:'1.2rem'}} href="mailto: influencermarketing@soicalpubli.co.in?subject = Feedback&body = Message">
                  
                     influencermarketing@soicalpubli.co.in
                 </a>
