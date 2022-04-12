@@ -45,12 +45,12 @@ export default class contactUs extends Component {
                 </p>
               </div>
               <div>
-               <a style={{textDecoration:'none', color:'white'}} href="https://wa.me/918859580672?text=hi"> <h2>+91 9804340458</h2></a>
+               <a style={{textDecoration:'none', color:'white'}} href="https://wa.me/919723232454?text=hi"> <h2>+91 9723232454</h2></a>
               </div>
               <div>
-                <a style={{textDecoration:'none' , color:'white', fontSize:'1.2rem'}} href="mailto:socialpubli.work@gmail.com?subject = Feedback&body = Message">
+                <a style={{textDecoration:'none' , color:'white', fontSize:'1.5rem'}} href="mailto: influencermarketing@soicalpubli.co.in?subject = Feedback&body = Message">
                  
-                    socialpubli.work@gmail.com
+                    influencermarketing@soicalpubli.co.in
                 </a>
                
               </div>

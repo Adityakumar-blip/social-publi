@@ -107,7 +107,7 @@ export default class influencer extends Component {
 
               <div className="double-container">
                 <div className="service-section black"><h1>STRATEGY</h1></div>
-                <div className="service-section grey"><h1  >B2B</h1></div>
+                <div className="service-section grey">  <h1 className="service-lk"><Link to="/B2c">B2B</Link></h1></div>
 
               </div>
 
