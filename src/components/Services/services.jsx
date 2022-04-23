@@ -64,7 +64,7 @@ export default class influencer extends Component {
                     style={{ fontWeight: "350", lineHeight: "2" }}
                     className="texts"
                   >
-                    
+                    Our talented team is responsible for having created some of the most viral and successful campaigns for our clients globally. We continually aim to exceed expectations, make lasting memories, and amplify brands to their highest potential. Our marketing mix only contains services with proven ROI, backed by analytics.
                   </h5>
                   <div className="lets-work">
                     <Link
