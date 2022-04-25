@@ -1,100 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-.footer-wrapper{
-    width: 100%;
-     padding: 3rem 0;
-    text-align: center;
-    background-color: rgb(7, 7, 7);
-  }
-  
-  .column-wrapper{
-    display: flex; 
-    color:#fff;
-    width: 100%;
-  }
-  
-  .column-wrapper>.column{
-     
-      display: grid;
-      text-align: center;
-      
-  }
-  
-  .column >a{
-    text-decoration: none;
-    color: #fff;
-    margin: 10px 5px;
-  }
-  
-  .column >a:hover{
-    color: rgb(79, 79, 252);
-  }
-  
-   .Links{
-     display: flex;
-     color: #fff;
-     justify-content: center;
-     align-items: center;
-  
-   }
-   .link{
-     padding: 0 3rem;
-     color: #fff;
-  
-   }
-  .footer-wrapper >h1{
-     
-    color: #fff;
-    text-align: center;
-     padding: 2rem 20rem;
-  }
-  .column-wrapper h6{
-     margin-top: 3rem;
-    font-family: 'poppins','serif';
-    font-weight: lighter;
-     font-size: small;
-  }
-   
-  @media (max-width:760px){
+/* * {
+  font-family: Open Sans;
+} */
 
-    .footer-wrapper>h1{
-      margin: 0;
-      padding: 1rem ;
+/* section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+} */
 
-    }
-    .column-wrapper{
-      padding: 3rem;
-    }
-    .column-wrapper>.column{
-      padding: 1rem;
-    }
-    .Links{
-      display: flex;
-      color: #fff;
-      justify-content: center;
-      align-items: center;
-      padding-top:2rem ;
-    }
-    .link{
-      padding: 1rem 1rem;
-      font-size: 10px;
-      color: #fff;
-    }
-  }
-  @media screen and (min-device-width: 761px) and (max-device-width: 960px) { 
-   
-    .footer-wrapper >h1{
-     
-      color: #fff;
-      text-align: center;
-      font-size: 2.5rem;
-       padding: 2rem  3rem;
-    }
-    .link{
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #fff;
-    }
-    .column-wrapper{
-      padding: 3rem;
-    }
-  }
+.Pink{
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  color: #f8971d;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-distributed{
+	background: #000;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+  /* position: fixed; */
+  z-index: -10;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

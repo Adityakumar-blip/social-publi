@@ -34,8 +34,8 @@
 
  
 .headline:hover{
-    -webkit-text-fill-color: rgb(99, 99, 248);
-    -webkit-text-stroke-color: rgb(99, 99, 248);;
+    -webkit-text-fill-color: #f8971d;
+    -webkit-text-stroke-color:  #f8971d;
 
 }
 

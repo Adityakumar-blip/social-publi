@@ -177,10 +177,12 @@
   justify-content: center;
   align-items: center;
   transition:  background-color 0.4s;
+  position: relative;
+	z-index: 10;
 }
 
 .Lets-work-together:hover{
-  background-color: rgb(81, 81, 202);
+  background-color: #f8971d;
   
 }
  

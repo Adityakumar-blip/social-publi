@@ -3,41 +3,78 @@ import './footer.css'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
 import { Link } from 'react-router-dom'
+import brand from './image/png-logo.png';
 
 export default class Footer extends Component {
   render() {
     return (
       <>
-       <div className="footer-wrapper">
-        <Zoom>
-          <h1>India's Number one Influncer Marketing Plateform.</h1>
-        </Zoom> 
-           <div className="column-wrapper row">
-          <Fade left cascade>
-           <div className='column col-lg-4  col-sm-4'>
-               <a  href=""><h1  >SocialPubli</h1></a>
-               <Link to="/">Home</Link>
-               <Link to="/services">Services</Link>
-               <Link to="/influencer">Work</Link>
-               <Link to="/brands">Brand</Link>
-               <Link to='/tools'>Tools</Link>
-               <Link to="/about">About</Link>
-               <Link to="/contactUs">Contact Us</Link>
-           </div>
-           </Fade>
-           <div className='  col-lg-8 col-sm-8  Links' > 
-           <Fade bottom cascade>
-           <a className='link '  href=""><i class="fab fa-instagram fa-4x" ></i></a>
-           <a className='link ' href=""> <i class="fab fa-facebook fa-4x" ></i></a>
-           <a className='link ' href=""> <i class="fab fa-twitter fa-4x" ></i></a>
-           <a className='link ' href=""> <i class="fab fa-linkedin fa-4x" ></i></a>
-           </Fade>
-           </div>
-             <h6>copyright @2022</h6> 
-           </div>
-      
-      
-       </div>
+     <section className='Pink'>India's No.1 Influencer Marketing Platform</section>
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+      <Link className="navbar-brand" to="/">
+                <img src={brand} alt=".."/>
+                </Link>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Services</a>
+				
+					<a href="#">Work</a>
+				
+					<a href="#">Brands</a>
+					
+					<a href="#">Tools</a>
+					
+					<a href="#">About</a>
+
+          <a href='#'>Contact</a>
+				</p>
+
+				<p class="footer-company-name"> SocialPubli © 2022</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Jetalpur Road</span>Vadodara , Gujarat</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91783812132</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">influencermarketing@soicalpubli.co.in</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
       </>
     )
   }
