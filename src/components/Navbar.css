@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=Poppins&display=swap');
 
 .nav-wrapper{
-    background-color: white;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
 
 .navbar li a{
     text-decoration: none;
-    color: black;
+    color: #f8971d;
     font-weight: 400;
     font-size: 20px;
     font-weight: 600px;
@@ -29,9 +29,9 @@
 }
 
 .navbar-brand img{
-    width: 200px;
-    height: 80px;
-    margin-left:30px;
+    width: 14rem;
+    height: 6rem;
+    /* margin-left:30px; */
 }
 
 

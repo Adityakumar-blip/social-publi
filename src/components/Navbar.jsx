@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Navbar.css';
-import brand from './image/brandlogo.png';
+import brand from './image/png-logo.png';
 import {Link} from 'react-router-dom';
 
 

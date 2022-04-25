@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import bgImg from '../video/bgvideo.mp4'
+import wall from '../image/new-wall-home.png'
 import {FiArrowDown} from 'react-icons/fi';
 import Socialsection from './Socialsection'
 import Carousel from './Carousel';
@@ -18,6 +19,7 @@ const Home = () => {
       <header>
       <div className=" video-container">
       <div className="main-heading-wrapper">
+            <img src={wall} alt="wall" />
             <h1 className="main-heading slide">Influencer Marketing<br/> 
             <span>Done Right</span></h1>
             <p className="main-para slide">As an Influencer Marketing Agency, we create the most viral,<br/> 
@@ -26,9 +28,8 @@ const Home = () => {
               <Link to='/influencerpage' className='glow-link'> I am Influencer</Link>
             </button>
             </div>
-        <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
-            </video>
-           
+        {/* <video src={bgImg} className="video" autoPlay loop muted type="video/mp4">
+            </video> */}
           </div>
       </header>
     </section>
