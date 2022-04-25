@@ -146,6 +146,10 @@
   content: none;
 }
 
+.footer-links>a:hover{
+  color: #f8971d;
+}
+
 /* Footer Right */
 
 .footer-distributed .footer-right{
@@ -187,6 +191,22 @@
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+.footer-icons>.twitt:hover{
+  background-color: #1da1f2;
+}
+
+.footer-icons>.face:hover{
+  background-color: #4267b2;
+}
+
+.footer-icons>.linkd:hover{
+  background-color: #0077b5;
+}
+
+.footer-icons>.insta:hover{
+  background-color: #ff927c;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

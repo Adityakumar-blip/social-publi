@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import bgImg from '../video/bgvideo.mp4'
-import wall from '../image/new-wall-home.png'
+import wall from '../image/new-wall-home1.png'
 import {FiArrowDown} from 'react-icons/fi';
 import Socialsection from './Socialsection'
 import Carousel from './Carousel';
