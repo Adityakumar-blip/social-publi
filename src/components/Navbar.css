@@ -11,6 +11,12 @@
     text-decoration: none;
 }
 
+.navbar li:hover{
+    background-color: #f8971d;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
 .navbar li a{
     text-decoration: none;
     color: #f8971d;
@@ -25,7 +31,7 @@
 }
 
 .navbar li a:hover{
-    color: #1c6dd0;
+    color: white;
 }
 
 .navbar-brand img{

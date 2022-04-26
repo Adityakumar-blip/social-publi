@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
      
-    <section className='landing-page'>
+    <section id='Home' className='landing-page'>
       <header>
       <div className=" video-container">
       <div className="main-heading-wrapper">

@@ -48,7 +48,7 @@ export default class influencer extends Component {
 
     return (
       <>
-        <div className="service-wrapper">
+        <div id="Service" className="service-wrapper">
           <div className="about-service">
             <div className="service service-heading ">
               <Fade left>
