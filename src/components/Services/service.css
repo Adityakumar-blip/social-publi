@@ -74,11 +74,17 @@
 }
 
 .service-section:hover{
-    background-color:#0E7895 ;
+    background-color:#f8971d ;
 }
 
 .black{
     background-color: black;
+    text-decoration: none;
+}
+
+
+.black Link{
+    text-decoration: none;
 }
 
 .grey{

@@ -15,11 +15,15 @@ import About from './components/About/About.js';
 import Influencerpage from './components/Influencerpage/Influencerpage'
 import Brandform from './components/Brandform/Brandform'
 import B2c from './components/Services/B2c';
+import ScrollToTop from './components/ScrollToTop';
+import Influencermarketing from './components/Influencermarketing/Influencermarketing';
+
 function App() {  
   return (
     <>
 
     <Router>
+      <ScrollToTop/>
         <Navbar/>
             <Routes>
             <Route path='/' exact element={<Home/>}/>
@@ -33,6 +37,7 @@ function App() {
             <Route path='/influencerpage' element={<Influencerpage/>}/>
             <Route path='/brandform' element={<Brandform/>}/>
             <Route path='/b2c' element={<B2c/>} />
+            <Route path='/marketing' element={<Influencermarketing/>} />
 
             </Routes>
         <LetsTalk/>

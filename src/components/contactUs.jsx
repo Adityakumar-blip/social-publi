@@ -2,14 +2,60 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
+import connect from './image/connect.jpg'
 
 import "./contactus.css";
 export default class contactUs extends Component {
   render() {
     return (
       <>
+
+      <section>
+        <div className="Indigo">
+          <div className="Indigo-container">
+          <div className='row g-0 Red-box'>
+              <div className='col-md-5 col-sm-12'>
+              <div className='Indigo-body'>
+                  
+                  <h1>Let's Connect</h1>
+                  <p>We are a collective of multi-disciplinary digital natives,all working together as one, to propel your brand online.</p>
+                
+                </div>
+              </div>
+              <div className='col-md-7 col-sm-12'>
+                <div className='Indigo-img'>
+                    <img src="https://images.unsplash.com/photo-1569617084133-26942bb441f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHlvdXRofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt='Red' />
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="Violet">
+          <div className="Violet-container">
+            <img src={connect} />
+            <div className='row g-0 Red-box'>
+              <div className='col-md-6 col-sm-12'>
+                <div className='Violet-body1'>
+                  <h1>Location</h1>
+                </div>
+              </div>
+              <div className='col-md-6 col-sm-12'>
+                <div className='Violet-body2'>
+                  
+                  <h1>Let’s connect</h1>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
          
-        <div className="row contactUs-container">
+        {/* <div className="row contactUs-container">
             
           
           <div class="col col-lg-3 col-md-6 col-xm-12 col-sm-6">
@@ -56,7 +102,7 @@ export default class contactUs extends Component {
               </div>
             </div>
           </div>
-</div>
+</div> */}
         
       </>
     );

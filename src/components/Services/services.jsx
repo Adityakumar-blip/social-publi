@@ -86,7 +86,7 @@ export default class influencer extends Component {
           <Zoom bottom cascade style={{ height: 'fit-content' }} >
             <div className="service-container">
               <div className="double-container">
-                <div className="service-section black"> <h1> INFLUENCER MARKETING </h1></div>
+              <Link to="/marketing" ><div className="service-section black"> <h1 > INFLUENCER MARKETING </h1></div></Link>
                 <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
 
               </div>

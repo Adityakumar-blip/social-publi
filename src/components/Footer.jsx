@@ -19,19 +19,19 @@ export default class Footer extends Component {
                 </Link>
 
 				<p class="footer-links">
-					<a href="#Home" class="link-1">Home</a>
+					<Link to="/" class="link-1">Home</Link>
 					
 					<Link to="/services">Services</Link>
 				
-					<a href="#">Work</a>
+					<Link to="/influencer">Work</Link>
 				
-					<a href="#">Brands</a>
+					<Link to="/brands">Brands</Link>
 					
-					<a href="#">Tools</a>
+					<Link to="/tools">Tools</Link>
 					
-					<a href="#">About</a>
+					<Link to="/about">About</Link>
 
-          <a href='#'>Contact</a>
+          <Link to='/contactus'>Contact</Link>
 				</p>
 
 				<p class="footer-company-name"> SocialPubli © 2022</p>
