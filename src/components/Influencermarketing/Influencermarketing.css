@@ -217,3 +217,132 @@
         stroke-dashoffset: 100;
     }
 } */
+
+
+@media (max-width:760px){
+    .Blue-heading>h1{
+        font-size: 2.7rem;
+        padding: 0 3rem;
+        color: white;
+    }
+    
+    .Blue-img>img{
+        width: 100%;
+    }
+
+    .Green-heading{
+        font-size: 4rem;
+        color: white;
+        padding: 4rem 2rem;
+        font-family: 'Abril Fatface';
+        text-align: center;
+    }
+    
+    .Green-body>h1{
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .Green-body>p{
+        text-align: left;
+        color: white;
+        padding: 2rem 2rem;
+        font-size: 1.3rem;
+    
+    }
+    
+    .Green-body button{
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    
+    }
+
+    .Purple-heading{
+        padding: 1rem 2rem;
+    }
+    
+    .Purple-heading>h1{
+        text-align: left;
+        padding: 1rem;
+        color: white;
+        font-size: 2.6rem;
+    }
+    
+    .Purple-heading>p{
+        color: white;
+        font-size: 1.3rem;
+        text-align: left;
+        padding: 1rem;
+        font-family: 'Poppins';
+    }
+
+    .Yellow-Progress{
+        margin: 0 2rem;
+        padding: 0 0 3rem;
+    }
+    
+    .Yellow-Progress>h2{
+        font-size: 1.2rem;
+    }
+    
+    .Yellow-height{
+        height: 4px;
+        width: 20rem;
+    }
+
+    .Yellow-head1>h1{
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .Yellow-head2>h1{
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .Orange-body{
+        padding: 0rem 0;
+    }
+    
+    .Orange-body>h1{
+        color: Pink;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .Orange-body>p{
+        color: white;
+        text-align: left;
+        padding: 2rem 2rem 2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .Red-img>img{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .Red-body>h1{
+        color: rgb(245, 183, 14);
+        margin-top: 1rem;
+        padding: 1rem 2rem ;
+        font-size: 2.4rem;
+    }
+    
+    .Red-body>p{
+        color: white;
+        padding: 0 2rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+}
