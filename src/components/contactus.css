@@ -145,75 +145,29 @@
 @media (max-width:760px){
  
 
-.contactUs-container{
-    margin: 0;
-    padding: 1rem  ;
-    background: url('https://images.unsplash.com/photo-1502639625928-9e0198ae7dfb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGJhY2tncm91bmR8ZW58MHwwfDB8YmxhY2t8&auto=format&fit=crop&w=500&q=60');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-}
+    .Indigo-img>img{
+        width: auto;
+        height: 70vh;
+        padding: 3rem;
+    }
 
- 
-.text-cont{
-     padding: 1rem;
-     align-items: center;
-     text-align: left;
-}
-
- 
-.text-cont>*{
-    color: white;
-}
-
-.text-cont  .contact-email{
-    text-align: center;
-}
- 
-.contact-type{
-     width: 100%;
-     color: black;
-     margin: 3rem 1rem ;
-     background : rgb(201, 198, 198);
-     padding: 2rem 1rem ;
-     margin-right: 2rem;
-
-
- }
-
-.text-cont>div> h1{
-    font-size: 2.2rem;
-    font-family: 'Lora';
+    .Indigo-body{
+        text-align: center;
+        padding: 0 3rem;
+    }
     
-}
-.contact-type>*{
-    margin: 1rem 0;
-
-
- 
-}
-
- 
- .contact-type>h1>strong{
-     font-size: 3.3rem;
- }
-.contact-type button{
-    width: 100%;
-    height: 3.4rem;
-    border: none;
-    background-color: black;
-   border-radius: 10px;
-   margin-top: 1rem;
-   margin-bottom: -1rem;
-}
-
- 
-.contact-type button>*{
-    text-decoration: none;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 600;
-
- 
-}
+    .Indigo-body>h1{
+        text-align: left;
+        font-size: 3rem;
+        color: #f8971d;
+    }
+    
+    .Indigo-body>p{
+        left: 0;
+        top: 0;
+        padding: 0 7rem;
+        text-align: left;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
 }
