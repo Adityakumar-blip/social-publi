@@ -16,8 +16,56 @@
     background-color:aliceblue;
 }
  
+.campaign>h1{
+    padding-left: 2rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
 
- 
+.campaign>p{
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.campaign-card{
+    width:22rem;
+    height:25rem;
+    display: flex;
+    display: inline-block;
+    margin-left:2rem;
+}
+
+.card .campaign-img{
+    border-radius: 10px 10px 0 0;
+    height:50vh;
+}
+
+.card .wrap{
+    background-color: #f8971d;
+    border-radius: 0 0 10px 10px;
+     
+}
+
+.wrap .campaign-text{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    background-color: #f8971d;
+}
+
+.wrap .card-info{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Lora', sans-serif;
+}
+
+
+
+
+
+
+
 .carousel-items>img{
      
     width: 100%; 

@@ -76,7 +76,7 @@ export default class influencer extends Component {
                         fontFamily: "poppins",
                       }}
                     >
-                      <h5> ➨ Work with Us</h5>{" "}
+                      <h5 style={{color:"#f8971d"}} > ➨ Work with Us</h5>{" "}
                     </Link>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default class influencer extends Component {
           <Zoom bottom cascade style={{ height: 'fit-content' }} >
             <div className="service-container">
               <div className="double-container">
-              <div className="service-section black"><Link to="/marketing" > <h1 > INFLUENCER MARKETING </h1></Link></div>
+              <div className="service-section black"><Link to="/marketing" style={{color:"white", textDecoration:"none"}} ><h1>INFLUENCER MARKETING</h1></Link></div>
                 <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
 
               </div>

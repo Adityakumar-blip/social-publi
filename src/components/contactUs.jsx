@@ -1,16 +1,14 @@
-import React, { Component } from "react";
-import { Link } from 'react-router-dom'
-import Zoom from 'react-reveal/Zoom'
-import Fade from 'react-reveal/Fade'
-import connect from './image/connect.jpg'
+import React, {useState} from 'react'
+import Form from './Form1.jsx'
+import './contactus.css'
 
-import "./contactus.css";
-export default class contactUs extends Component {
-  render() {
-    return (
-      <>
+const ContactUs = () => {
 
-      <section>
+  const [active, setactive] = useState();
+
+  return (
+    <>
+    <section>
         <div className="Indigo">
           <div className="Indigo-container">
           <div className='row g-0 Red-box'>
@@ -35,7 +33,7 @@ export default class contactUs extends Component {
       <section>
         <div className="Violet">
           <div className="Violet-container">
-            <img src={connect} />
+            <img src="" />
             <div className='row g-0 Red-box'>
               <div className='col-md-6 col-sm-12'>
                 <div className='Violet-body1'>
@@ -47,6 +45,21 @@ export default class contactUs extends Component {
                   
                   <h1>Let’s connect</h1>
                 
+                <div className="Violet-dropdown">
+                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    What's Your Role ?
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button class="dropdown-item" type="button">Media</button>
+    <button class="dropdown-item" type="button">Brand</button>
+    <button class="dropdown-item" type="button">Influencer/Creator</button>
+  </div>
+</div>
+                </div>
+                {active === "FirstCard" && <Form title="1" />}
+                <Form title="2" />
+                <Form title="3" />
                 </div>
               </div>
             </div>
@@ -103,8 +116,8 @@ export default class contactUs extends Component {
             </div>
           </div>
 </div> */}
-        
-      </>
-    );
-  }
+        </>
+  )
 }
+
+export default ContactUs

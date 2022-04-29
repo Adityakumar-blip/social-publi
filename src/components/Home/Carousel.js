@@ -11,22 +11,52 @@ import Zoom from 'react-reveal/Zoom'
 export default class extends React.Component {
   render() {
 
-    const setting = {
+    // const setting = {
       
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay:true,
-        autoplaySpeed:2000,
-      accessibility:true,
+    //   infinite: true,
+    //   speed: 500,
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1,
+    //   autoplay:true,
+    //     autoplaySpeed:2000,
+    //   accessibility:true,
      
-    };
+    // };
 
     return (
       <>
       <section>
-  <Zoom>
+    
+      <div className="campaign">
+          <h1>Our Work In Action</h1>
+          <p>80+ leading brands & their agencies leverage our influencer network across the marketing cycle – for research, sampling, content creation & distribution, driving engagement & conversions, at scale.</p>
+          <div className="campaign-container">
+          <div class="card campaign-card"  >
+            <img src={img1} class="card-img-top campaign-img" alt="..."/>
+            <div class="card-body wrap">
+            <p class="campaign-text">Campaign 1</p>
+          </div>
+            <p className='card-info'></p>
+          </div>
+          <div class="card campaign-card"  >
+            <img src={img2} class="card-img-top campaign-img" alt="..."/>
+            <div class="card-body wrap">
+            <p class="campaign-text">Campaign 2</p>
+          </div>
+            <p className='card-info'></p>
+          </div>
+          <div class="card campaign-card"  >
+            <img src={img3} class="card-img-top campaign-img" alt="..."/>
+            <div class="card-body wrap">
+            <p class="campaign-text">Campaign 3</p>
+          </div>
+            <p className='card-info'></p>
+          </div>
+          </div>
+        </div>
+
+
+  {/* <Zoom>
   <div className="carousel-inner">
 
     
@@ -59,7 +89,7 @@ export default class extends React.Component {
 
    
 </div>
-</Zoom>
+</Zoom> */}
 </section>
 </>
     );
