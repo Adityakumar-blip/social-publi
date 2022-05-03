@@ -34,21 +34,21 @@ export default class extends React.Component {
           <div class="card campaign-card"  >
             <img src={img1} class="card-img-top campaign-img" alt="..."/>
             <div class="card-body wrap">
-            <p class="campaign-text">Campaign 1</p>
+            <p class="campaign-text">Al Ziba Cares</p>
           </div>
             <p className='card-info'></p>
           </div>
           <div class="card campaign-card"  >
             <img src={img2} class="card-img-top campaign-img" alt="..."/>
             <div class="card-body wrap">
-            <p class="campaign-text">Campaign 2</p>
+            <p class="campaign-text">Vasu Healthcare</p>
           </div>
             <p className='card-info'></p>
           </div>
           <div class="card campaign-card"  >
             <img src={img3} class="card-img-top campaign-img" alt="..."/>
             <div class="card-body wrap">
-            <p class="campaign-text">Campaign 3</p>
+            <p class="campaign-text">SodaG</p>
           </div>
             <p className='card-info'></p>
           </div>
