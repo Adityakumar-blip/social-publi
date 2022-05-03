@@ -60,7 +60,7 @@ export default class Footer extends Component {
 
 				<p class="footer-company-about">
 					<span>About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+					Socialpubli is india's fastest growing influencer marketing. We use latest technologies and AI driven decisions to generate higher engagements.
 				</p>
 
 				<div class="footer-icons">

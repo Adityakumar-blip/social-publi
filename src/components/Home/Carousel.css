@@ -17,23 +17,28 @@
 }
  
 .campaign>h1{
-    padding-left: 2rem;
+    margin-left: 2.5rem;
+    padding-left: 1rem ;
     font-size: 2.8rem;
     font-weight: 600;
+    border-left: 5px solid #f8971d;
 }
 
 .campaign>p{
-    padding: 0 2rem;
+    padding: 0 2.5rem 2rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
 .campaign-card{
-    width:22rem;
-    height:25rem;
+    width:23rem;
     display: flex;
     display: inline-block;
-    margin-left:2rem;
+    margin:0 2.5rem;
+}
+
+p{
+    margin-bottom: 0;
 }
 
 .card .campaign-img{
@@ -43,9 +48,32 @@
 
 .card .wrap{
     background-color: #f8971d;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0px 0px;
      
 }
+
+.campaign-info{
+    background-color: rgb(255, 231, 125);
+    padding: 1rem 0;
+}
+
+.box {
+    float: Left;
+    text-align:center;
+    width: 30%;
+    /* padding: 1rem; */
+    font-weight: 500;
+  }
+
+  .para-no{
+      font-size: 2rem;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .wrap .campaign-text{
     font-size: 1.5rem;
@@ -54,11 +82,6 @@
     background-color: #f8971d;
 }
 
-.wrap .card-info{
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: 'Lora', sans-serif;
-}
 
 
 

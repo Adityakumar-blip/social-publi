@@ -94,7 +94,7 @@ export default class influencer extends Component {
 
               <div style={{ width: '100%', height: '6px', backgroundColor: '#0E7895' }}></div>
               <div className=" single-container">
-                <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH INFLUSOFT™</h1></div>
+                <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH SocialSOFT™</h1><p>Coming soon</p></div>
               </div>
               <div style={{ width: '100%', height: '6px', backgroundColor: '#0E7895' }}></div>
 
@@ -106,8 +106,8 @@ export default class influencer extends Component {
               </div>
 
               <div className="double-container">
-                <div className="service-section black"><h1>STRATEGY</h1></div>
-                <div className="service-section grey">  <h1 className="service-lk"><Link to="/B2c">B2B</Link></h1></div>
+                <div className="service-section black"><h1>BLOCKCHAIN /W3</h1></div>
+                <div className="service-section grey">  <h1 className="service-lk"><Link to="/B2c" style={{textDecoration:"none", color:"white"}} >B2B</Link></h1></div>
 
               </div>
 

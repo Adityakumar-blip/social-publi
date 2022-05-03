@@ -33,24 +33,69 @@ export default class extends React.Component {
           <div className="campaign-container">
           <div class="card campaign-card"  >
             <img src={img1} class="card-img-top campaign-img" alt="..."/>
-            <div class="card-body wrap">
+            <div class="campaign-body wrap">
             <p class="campaign-text">Al Ziba Cares</p>
           </div>
-            <p className='card-info'></p>
+            <div className='campaign-info'>
+            <div class="clearfix">
+  <div class="box" >
+  <p className='para-no'>67</p>
+  <p>campus influencer</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>67K</p>
+  <p>Reach</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>8.7K</p>
+  <p>Social Media Engagement</p>
+  </div>
+</div>
+            </div>
           </div>
           <div class="card campaign-card"  >
             <img src={img2} class="card-img-top campaign-img" alt="..."/>
-            <div class="card-body wrap">
+            <div class="campaign-body wrap">
             <p class="campaign-text">Vasu Healthcare</p>
           </div>
-            <p className='card-info'></p>
+          <div className='campaign-info'>
+            <div class="clearfix">
+  <div class="box" >
+  <p className='para-no'>67</p>
+  <p>campus influencer</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>67K</p>
+  <p>Reach</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>8.7K</p>
+  <p>Social Media Engagement</p>
+  </div>
+</div>
+            </div>
           </div>
           <div class="card campaign-card"  >
             <img src={img3} class="card-img-top campaign-img" alt="..."/>
-            <div class="card-body wrap">
+            <div class="campaign-body wrap">
             <p class="campaign-text">SodaG</p>
           </div>
-            <p className='card-info'></p>
+          <div className='campaign-info'>
+            <div class="clearfix">
+  <div class="box" >
+  <p className='para-no'>67</p>
+  <p>campus influencer</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>67K</p>
+  <p>Reach</p>
+  </div>
+  <div class="box" >
+  <p className='para-no'>8.7K</p>
+  <p>Social Media Engagement</p>
+  </div>
+</div>
+            </div>
           </div>
           </div>
         </div>
