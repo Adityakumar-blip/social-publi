@@ -17,6 +17,7 @@ import Brandform from './components/Brandform/Brandform'
 import B2c from './components/Services/B2c';
 import ScrollToTop from './components/ScrollToTop';
 import Influencermarketing from './components/Influencermarketing/Influencermarketing';
+import Performance from './components/Performance/Performance';
 
 function App() {  
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path='/brandform' element={<Brandform/>}/>
             <Route path='/b2c' element={<B2c/>} />
             <Route path='/marketing' element={<Influencermarketing/>} />
+            <Route path='/performance' element={<Performance/>} />
 
             </Routes>
         <LetsTalk/>

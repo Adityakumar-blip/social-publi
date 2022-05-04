@@ -8,13 +8,6 @@
     padding: 0;
 
 }
-
-.carousel-inner{
-    padding: 100px ;
-    align-items: center;
-    z-index: -10;
-    background-color:aliceblue;
-}
  
 .campaign>h1{
     margin-left: 2.5rem;
@@ -82,59 +75,19 @@ p{
     background-color: #f8971d;
 }
 
-
-
-
-
-
-
-
-.carousel-items>img{
-     
-    width: 100%; 
-}
-.carousel-items{
-    position: relative;
-}
-.carousel-captions{
-position: absolute;
-bottom: 2rem;
- text-align: center;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- width: 100%;
- color: white;
-}
-.carousel-captions>h3{
-    font-size: 2rem;
-}
-.carousel-captions>p{
-    color: rgb(218, 218, 218);
-}
 @media (max-width:760px){
+    .campaign>h1{
+        font-size: 2rem;
+    }
 
-   
-.carousel-inner{
-    padding: 100px 0;
-    align-items: center;
-    z-index: -10;
-    background-color:aliceblue;
-}  
- 
-.carousel-captions>h3{
-      display: none;
-}
-.carousel-captions>p{
-   
-    display: none;
-}
- .carousel-captions{
-     overflow: visible;
- }
-.carousel-items>img{
-     
-     width: 100%; 
-}
+    .campaign>p{
+        font-size: 1rrem;
+    }
+
+    .campaign-card{
+        width:23rem;
+        display: flex;
+        display: inline-block;
+        margin:1rem ;
+    }
 }

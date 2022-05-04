@@ -101,7 +101,7 @@ export default class influencer extends Component {
 
               <div className="double-container">
                 <div className="service-section grey"> <h1>CREATIVE&  CONTENT</h1></div>
-                <div className="service-section black"><h1>PERFORMANCE MARKETING & MEDIA</h1></div>
+                <div className="service-section black"><Link to="/performance" ><h1>PERFORMANCE MARKETING & MEDIA</h1></Link></div>
 
               </div>
 

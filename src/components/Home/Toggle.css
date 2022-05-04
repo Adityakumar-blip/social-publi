@@ -1,88 +1,76 @@
-.toggle-wrapper>h1{
-    text-align: center;
-    padding: 2rem;
-    font-weight: 700;
-}
+  /* .toggle-wrapper{
+      height: 65vh;
+  }
+   */
 
-.toggle-container{
-    padding: 4rem;
-    
-}
-
-.toggle-container>h1{
-    text-align: center;
-}
-
-.toggle-title{
+   .toggle-wrapper>h1{
+       text-align: center;
+       padding: 2rem 0;
+   }
+  .bloc-tabs {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    margin-left: 6rem;
-}
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+  }
 
-.toggle-title ul{
-    text-decoration: none;
-    list-style: none;
-
-}
-
-.toggle-title>ul>li:hover{
-    color: #f8971d;
+  .tabs {
+  
+    padding: 15px;
+    text-align: left;
+    width: 13rem;
     cursor: pointer;
-    border-right: 3px solid #f8971d;
-    width: 15rem;
-}
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+  }
 
-.toggle-title>ul>li:focus{
+  .tabs:hover{
     color: #f8971d;
-}
+    border-right: 3px solid #f8871d;
+  }
 
-.toggle-title ul li {
+  .content {
+    width: 100%;
+    /* height: 100%; */
+    display: none;
+    
+  }
 
-    font-size: 1.5rem;
+  .content p {
+    width: 100%;
+    height: 100%;
     font-weight: 600;
+    padding-bottom: 1rem;
+  }
 
-}
+  .active-content {
+    display: block;
+  }
 
-.toggle-title ul li:focus{
-    border-right: 2px solid salmon;
-}
+  .testimonial-heading{
+      padding: 0 4rem;
+      border-right: 3px solid #f8971d;
+      width: 90%;
+  }
 
-.toggle-testimonial{
-    padding: 0 3rem;
-    border-right: 3px solid #f8971d;
-}
-
-.toggle-text{
-    text-decoration: none;
-    color: black;
-}
-
-.toggle-testimonial>h1{
-    border-right: 2px solid #f8971d;
-}
-
-@media (max-width:760px){
-
-
-    .toggle-title{
-        display: flex;
+  @media (max-width:760px){
+    .bloc-tabs {
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         margin-left: 0;
-    }
+        padding-left: 0;
+      }
 
-    .toggle-title ul li{
-        font-size: 1.2rem;
-    }
+      .tabs{
+          font-size: 1rem;
+      }
 
-    ol, ul{
-        psdding-left: 0;
-    }
+      .content{
+          padding:1rem 2rem
+      }
+  }
 
-    .toggle-title>ul>li:hover{
-        color: #f8971d;
-        cursor: pointer;
-        border-right: 3px solid #f8971d;
-        width: 6rem;
-    }
-}
