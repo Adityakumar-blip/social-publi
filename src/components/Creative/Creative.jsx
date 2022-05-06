@@ -1,8 +1,7 @@
 import React from 'react'
-import './Performance.css'
 import {Link} from 'react-router-dom'
 
-const Performance = () => {
+const Creative = () => {
   return (
       <>
     <section>
@@ -103,4 +102,4 @@ const Performance = () => {
   )
 }
 
-export default Performance
+export default Creative

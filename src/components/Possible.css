@@ -1,0 +1,223 @@
+  /* .toggle-wrapper{
+      height: 65vh;
+  }
+   */
+.influencer-tab{
+    text-align: center;
+}
+
+
+.bloc-tabs1 {
+    text-align: center;
+}
+
+.tabs1 {
+
+ padding: 15px;
+ text-align: center;
+ cursor: pointer;
+ box-sizing: content-box;
+ position: relative;
+ outline: none;
+}
+
+.tabs1:hover{
+ background-color: #f8971d;
+ color: white;
+}
+
+.content1 {
+ width: 100%;
+ /* height: 100%; */
+ display: none;
+ 
+}
+
+.content1 p {
+ width: 100%;
+ font-weight: 600;
+ padding-bottom: 1rem;
+}
+
+.active-content1 {
+ display: block;
+}
+
+.testimonial-heading{
+   padding: 0 4rem;
+   border-right: 3px solid #f8971d;
+   width: 90%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300');
+
+/* ------------- */
+/* GLOBAL STYLES */
+/* ------------- */
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.wrapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+  padding:3rem 3rem;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background: #C3C9DD;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+  background: #dcdfea;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+
+.touch-form{
+    display: flex;
+    flex-direction: row;
+    /* padding-right: 1rem; */
+    justify-content: space-around;
+}
+
+
+
+/* .contact form label {
+  display: block;
+} */
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+  margin-top: 2rem;
+}
+
+.brand-radio{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form button,
+.contact form .input1,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+  /* margin: 1rem; */
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0;
+  
+  }
+
+  .wrapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+    
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+
+@media (max-width:760px){
+ .bloc-tabs {
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin-left: 0;
+     padding-left: 0;
+   }
+
+   .tabs{
+       font-size: 1rem;
+   }
+
+   .content{
+       padding:1rem 2rem
+   }
+}
+

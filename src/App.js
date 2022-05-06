@@ -18,6 +18,8 @@ import B2c from './components/Services/B2c';
 import ScrollToTop from './components/ScrollToTop';
 import Influencermarketing from './components/Influencermarketing/Influencermarketing';
 import Performance from './components/Performance/Performance';
+import Creative from './components/Creative/Creative';
+import Possible from './components/Possible';
 
 function App() {  
   return (
@@ -40,6 +42,9 @@ function App() {
             <Route path='/b2c' element={<B2c/>} />
             <Route path='/marketing' element={<Influencermarketing/>} />
             <Route path='/performance' element={<Performance/>} />
+            <Route path='/creative' element={<Creative/>} />
+            <Route path='/possible' element={<Possible/>} />
+            
 
             </Routes>
         <LetsTalk/>

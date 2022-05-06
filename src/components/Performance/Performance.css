@@ -1,4 +1,31 @@
-.main-pinpoint{
-    display: flex;
-    flex-direction: row;
+.Cyan-container{
+    background-color: black;
+}
+
+.Cyan-img>img{
+    width: 100%;
+    position: relative;
+    padding-right: 6rem;
+    padding-bottom: 4rem;
+}
+
+.Cyan-body>h1{
+    top: 45%;
+    left: 40%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    z-index: 11;
+    color: white;
+    font-size: 3.4rem;
+}
+
+.Cyan-body>p{
+    top: 70%;
+    left: 26%;
+    transform: translate(-28%, -50%);
+    position: absolute;
+    z-index: 11;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
 }
