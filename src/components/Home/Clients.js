@@ -1,8 +1,12 @@
 import React from 'react';
-import c1 from '../image/logo1.png';
-import c2 from '../image/logo2.png';
-import c3 from '../image/logo3.png';
-import c4 from '../image/logo4.png';
+import c1 from '../image/boat.png';
+import c2 from '../image/bombay.png';
+import c3 from '../image/hotstar.png';
+import c4 from '../image/netflix.png';
+import c5 from '../image/oppo.png';
+import c6 from '../image/rapido.png';
+import c7 from '../image/snapchat.png'
+import c8 from '../image/zara.png';
 import './Clients.css';
 import Zoom from 'react-reveal/Zoom'
 
@@ -30,16 +34,16 @@ const Clients = () => {
                   <div className="client-logo"><img src={c4} alt="logo1" className="client1"/></div>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xm-6">
-                  <div className="client-logo"><img src={c1} alt="logo1" className="client1"/></div>
+                  <div className="client-logo"><img src={c5} alt="logo1" className="client1"/></div>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xm-6">
-                  <div className="client-logo"><img src={c2} alt="logo1" className="client1"/></div>
+                  <div className="client-logo"><img src={c6} alt="logo1" className="client1"/></div>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xm-6">
-                  <div className="client-logo"><img src={c3} alt="logo1" className="client1"/></div>
+                  <div className="client-logo"><img src={c7} alt="logo1" className="client1"/></div>
                 </div>
                 <div className="col-lg-3 col-md-4 col-sm-6 col-xm-6">
-                  <div className="client-logo"><img src={c4} alt="logo1" className="client1"/></div>
+                  <div className="client-logo"><img src={c8} alt="logo1" className="client1"/></div>
                 </div>
                 </div>
                 </Zoom>
