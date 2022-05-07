@@ -1,6 +1,6 @@
 
 .influencerPage-wrapper{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,239,132,1) 0%, rgba(247,198,169,1) 54.2%, rgba(21,186,196,1) 100.3% );
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(41,41,43,1) 100%, rgba(0,212,255,1) 100%);
     animation: gradient 10s ease infinite;
     padding: 8rem 0;
 }
@@ -35,7 +35,7 @@
 }
 
 .form-wrapper{
-    background-color: aquamarine;
+    background-color: #f8971d;
      
     width: 50vw;
     margin-left: 13rem;
@@ -89,9 +89,9 @@
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
-    border: 1px solid  rgb(139, 230, 233);
-    outline: none;
-    background-color: rgb(95, 157, 228);
+    border: 2px solid  black;
+    color: black;
+    background: transparent;
     
 
 }

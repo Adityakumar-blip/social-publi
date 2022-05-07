@@ -15,9 +15,12 @@ const Possible = () => {
     email: "",
     number: "",
     city:"",
+    date:"",
     state:"",
     name:"",
-    genre: ""
+    genre: "",
+    youtube:"",
+    gender:""
 
   });
 
@@ -64,8 +67,11 @@ const Possible = () => {
       number,
       genre,
       city,
+      date,
       name,
-      state 
+      state,
+      youtube,
+      gender 
     } = userData;
     const res = await fetch(
       'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/InfluencerData.json', {
@@ -78,9 +84,12 @@ const Possible = () => {
         email,
         number,
         city,
+        date,
         state,
         name,
         genre,
+        youtube,
+        gender
       }),
     }
     );
@@ -97,6 +106,9 @@ const Possible = () => {
     email: "",
     company: "",
     phone:"",
+    genre:"",
+    time:"",
+    budget:""
   });
 
   let nm, vl;
@@ -130,7 +142,7 @@ const Possible = () => {
 
 
     } else {
-      setbrandData({ ...brandData, [name]: value })
+      setbrandData({ ...brandData, [nm]: vl })
     }
   }
 
@@ -142,7 +154,9 @@ const Possible = () => {
         email,
         company,
         phone,
-    } = userData;
+        time,
+        budget
+    } = brandData;
     const res = await fetch(
       'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/BrandData.json', {
       method: "POST",
@@ -154,6 +168,8 @@ const Possible = () => {
         email,
         company,
         phone,
+        time,
+        budget
       }),
     }
     );
@@ -200,12 +216,24 @@ const Possible = () => {
             <label>Insta-Id<span>*</span></label>
           </div>
           <div className="instaId">
+            <input type="text" name='youtube' required value={userData.youtube} onChange={postUserData} />
+            <label>Youtube<span></span></label>
+          </div>
+          <div className="instaId">
             <input type="text" name='email' required value={userData.email} onChange={postUserData} />
             <label>Email<span>*</span></label>
           </div>
           <div className="instaId">
-            <input type="number" name='number' required value={userData.number} onChange={postUserData} />
+            <input type="tel" name='number' required value={userData.number} onChange={postUserData} />
             <label>Contact No.<span>*</span></label>
+          </div>
+          <div className="instaId">
+            <input type="date" name='date' required value={userData.date} onChange={postUserData} />
+            <label>DOB<span>*</span></label>
+          </div>
+          <div className="instaId">
+            <input type="text" name='gender' required value={userData.gender} onChange={postUserData} />
+            <label>Gender<span></span></label>
           </div>
           <div className="instaId">
             <input type="text" name='city' required value={userData.city} onChange={postUserData} />
@@ -285,8 +313,8 @@ const Possible = () => {
                 Auto
               </label>
             </div>
-            <button type="button" class="submit-button">
-              <Link className='submit-link' to='/influencerpage' onClick={submitData} >Submit</Link>
+            <button type="button" class="submit-button" onClick={submitData}>
+              <Link className='submit-link' to='/influencerpage'  >Submit</Link>
             </button>
           </div>
 
@@ -299,136 +327,96 @@ const Possible = () => {
                         <div
                         className={toggleState === 2 ? "content1  active-content1" : "content1"}
                         >
-                            <div class="wrapper">
-
-{/* <!-- COMPANY INFORMATION --> */}
-<div class="company-info">
-    <h3>SocialPubli</h3>
-
-    <ul>
-        <li><i class="fa fa-road"></i>1007, One india bulls park, Jetalpur Road, Vadodara Gujarat</li>
-        <li><i class="fa fa-phone"></i>9723232454</li>
-        <li><i class="fa fa-envelope"></i>influencermarketing@socialpubli.co.in</li>
-    </ul>
-</div>
-{/* <!-- End .company-info --> */}
-
-{/* <!-- CONTACT FORM --> */}
-<div class="contact">
-    <h3>Get In Touch</h3>
-
-    <form id="contact-form" method='POST'>
-
-        <div className="touch-form">
-
-        <p>
-            <label>Name</label>
-            <input className='input1' type="text" name="name" value={brandData.name} id="name" onChange={postbrandData} required/>
-        </p>
-
-        <p>
-            <label>Company</label>
-            <input className='input1' type="text" name="company" value={brandData.company} id="company" onChange={postbrandData}/>
-        </p>
-
+                            
+<div className="influencerPage-wrapper">
+      <div className='infy-heading'>
+        <h1>Connect with Influencers</h1>
+        <p>Become A Part of socialpubli family</p>
+      </div>
+      <div className="form-wrapper" method="POST">
+        <div className="instaId">
+          <input type="text" name='name' required value={brandData.name} onChange={postbrandData} />
+          <label>Name<span>*</span></label>
         </div>
-        
-        <div className="touch-form">
-        <p>
-            <label>E-mail Address</label>
-            <input className='input1' type="email" name="email" value={brandData.email} id="email" onChange={postbrandData} required/>
-        </p>
-
-        <p>
-            <label>Phone Number</label>
-            <input className='input1' type="text" name="phone" value={brandData.phone} id="phone" onChange={postbrandData}/>
-        </p>
-
+        <div className="instaId">
+          <input type="text" name='company' required value={brandData.company} onChange={postbrandData} />
+          <label>Brand Name<span>*</span></label>
         </div>
-
-        <div className="row touch-form">
-        <div className="col col-md-6 col-sm-6   campaign-div">
-        <p>When do you want to launch the campaign :</p>
+        <div className="instaId">
+          <input type="email" name='email' required value={brandData.email} onChange={postbrandData} />
+          <label>Email<span>*</span></label>
+        </div>
+        <div className="instaId">
+          <input type="number" name='phone' required value={brandData.phone} onChange={postbrandData} />
+          <label>Mobile<span>*</span></label>
+        </div>
+        <div className="genre" required >
+        <div className="campaign-time">
+            <p>When would you like to launch the Campaign</p>
+            <div class="form-check">
+                <input class="form-check-input" name='time' value="Today" type="checkbox" onChange={postbrandData}  id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                Today
+            </label>
+        </div>
         <div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-    Today
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault2"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-    This Week
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault3"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-    This Month
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault4"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-    Not Yet Decided
-  </label>
-</div>
-        
+                <input class="form-check-input" name='time' value="This-Week" type="checkbox" onChange={postbrandData}  id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                This Week
+            </label>
         </div>
-
-        <div className=" col col-md-6 budget-div">
-        <p>Tentative Budget :</p>
         <div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault5"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-    Under Rs. 10 Lakhs
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault6"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-  Rs.10 Lakhs - 50 Lakhs
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault7"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-  Rs. 50 Lakhs - 1 Crore
-  </label>
-</div>
-
-<div class="form-check">
-  <input class="form-check-input " type="radio" name="flexRadioDefault" id="flexRadioDefault8"/>
-  <label class="form-check-label" for="flexRadioDefault1">
-  Over Rs. 1 Crore
-  </label>
-</div>
+                <input class="form-check-input" name='time' value="This-month" type="checkbox" onChange={postbrandData}  id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                This Month
+            </label>
         </div>
-
-        
-
+        <div class="form-check">
+                <input class="form-check-input" name='time' value="Not-decided" type="checkbox" onChange={postbrandData} id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                Not Yet Decided
+            </label>
         </div>
-
-        <p class="full">
-            <button onClick={submitbrandData} type="submit">Submit</button>
-        </p>
-
+            <p>What is the estimate of the budget</p>
+            <div class="form-check">
+                <input class="form-check-input" name='budget' type="checkbox" value="UNDER-10-LAKH" onChange={postbrandData} id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                Under 10 Lakh
+            </label>
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" name='budget' type="checkbox" value="10LAKH-50lakh" onChange={postbrandData} id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                RS. 10 Lakh to Rs. 50 lakh
+            </label>
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" name='budget' type="checkbox" value="50LAKH-1crore" onChange={postbrandData} id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                Rs. 50 lakh to Rs. 1 crore
+            </label>
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" name='budget' type="checkbox" value="OVER-1-CRORE" onChange={postbrandData} id="flexCheckDefault"/>
+                <label class="form-check-label" for="flexCheckDefault">
+                Over 1 crore
+            </label>
+        </div>
+          
+          <button type="button" class="submit-button"  onClick={submitbrandData}>
+        <Link className='submit-link' to='/brandform' >Submit</Link>
+        </button>
+         
+      </div>
+    </div>
+        </div>
         
-
-    </form>
-    {/* <!-- End #contact-form --> */}
-</div>
-{/* <!-- End .contact --> */}
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
   )
 }
