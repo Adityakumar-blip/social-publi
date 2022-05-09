@@ -314,7 +314,7 @@ const Possible = () => {
               </label>
             </div>
             <button type="button" class="submit-button" onClick={submitData}>
-              <Link className='submit-link' to='/influencerpage'  >Submit</Link>
+              <a className='submit-link' href=''  >Submit</a>
             </button>
           </div>
 
@@ -404,7 +404,7 @@ const Possible = () => {
         </div>
           
           <button type="button" class="submit-button"  onClick={submitbrandData}>
-        <Link className='submit-link' to='/brandform' >Submit</Link>
+        <a className='submit-link' href='' >Submit</a>
         </button>
          
       </div>
