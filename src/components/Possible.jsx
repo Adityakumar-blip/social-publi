@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import './Possible.css'
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/Zoom'
 
 const Possible = () => {
 
@@ -20,7 +22,11 @@ const Possible = () => {
     name:"",
     genre: "",
     youtube:"",
-    gender:""
+    gender:"",
+    Fullname:"",
+    account:"",
+    IFSC:"",
+    address:""
 
   });
 
@@ -71,7 +77,11 @@ const Possible = () => {
       name,
       state,
       youtube,
-      gender 
+      gender ,
+      Fullname,
+      account,
+      IFSC,
+      address
     } = userData;
     const res = await fetch(
       'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/InfluencerData.json', {
@@ -89,7 +99,11 @@ const Possible = () => {
         name,
         genre,
         youtube,
-        gender
+        gender,
+        Fullname,
+        account,
+        IFSC,
+        address
       }),
     }
     );
@@ -183,24 +197,29 @@ const Possible = () => {
   return (
     <div className="possible-container">
         <div className="two-section">
-            <div className="row">
+            <div className="row toggle-btn">
+              <Zoom>
                 <div className="col col-md-6 col-sm-6 influencer-tab">
-                    <h3
+                  <button><h3
                     className={toggleState === 1 ? "tabs1 active-tabs1" : "tabs1"}
                     onClick={() => toggleTab(1)}
-                    >I am Influencer</h3>
+                    >I am Influencer</h3></button>
                 </div>
+                </Zoom>
+                <Zoom>
                 <div className="col col-md-6 col-sm-6 brand-tab">
-                    <h3
+                    <button><h3
                     className={toggleState === 2 ? "tabs1 active-tabs1" : "tabs1"}
                     onClick={() => toggleTab(2)}
-                    >I am Brand</h3>
+                    >I am Brand</h3></button>
+                </div>
+                </Zoom>
                 </div>
 
                 <div className="possible-form">
                     <div className="col-md-12 col-sm-12">
                         <div className={toggleState === 1 ? "content1  active-content1" : "content1"}>
-
+                        <Zoom>
                         <div className="influencerPage-wrapper">
         <div className='infy-heading'>
           <h1>Become A FameTroop</h1>
@@ -228,7 +247,7 @@ const Possible = () => {
             <label>Contact No.<span>*</span></label>
           </div>
           <div className="instaId">
-            <input type="date" name='date' required value={userData.date} onChange={postUserData} />
+            <input type="text" name='date' onFocus="(this.type='date')" onBlur="if(!this.value) this.type='text'"  required value={userData.date} onChange={postUserData} />
             <label>DOB<span>*</span></label>
           </div>
           <div className="instaId">
@@ -236,12 +255,28 @@ const Possible = () => {
             <label>Gender<span></span></label>
           </div>
           <div className="instaId">
-            <input type="text" name='city' required value={userData.city} onChange={postUserData} />
-            <label>City<span>*</span></label>
+            <input type="text" name='address' required value={userData.address} onChange={postUserData} />
+            <label>Address<span>*</span></label>
           </div>
           <div className="instaId">
             <input type="text" name='state' required value={userData.state} onChange={postUserData} />
             <label>State<span>*</span></label>
+          </div>
+
+          <div className="bank-details">
+            <h5>Bank Details</h5>
+          <div className="instaId">
+            <input type="text" name='Fullname' required value={userData.Fullname} onChange={postUserData} />
+            <label>Full Name<span>*</span></label>
+          </div>
+          <div className="instaId">
+            <input type="number" name='account' required value={userData.account} onChange={postUserData} />
+            <label>Bank Account No.<span>*</span></label>
+          </div>
+          <div className="instaId">
+            <input type="text" name='IFSC' required value={userData.IFSC} onChange={postUserData} />
+            <label>IFSC Code<span>*</span></label>
+          </div>
           </div>
           <div className="genre" required >
             <h5>genre<span>*</span></h5>
@@ -320,6 +355,7 @@ const Possible = () => {
 
         </div>
       </div>
+      </Zoom>
 
 	                    </div>
                         </div>
@@ -327,7 +363,7 @@ const Possible = () => {
                         <div
                         className={toggleState === 2 ? "content1  active-content1" : "content1"}
                         >
-                            
+<Zoom>                          
 <div className="influencerPage-wrapper">
       <div className='infy-heading'>
         <h1>Connect with Influencers</h1>
@@ -413,9 +449,9 @@ const Possible = () => {
         
                         
                     </div>
+                    </Zoom> 
                 </div>
             </div>
-        </div>
     </div>
     </div>
   )

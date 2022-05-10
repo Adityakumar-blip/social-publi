@@ -4,6 +4,59 @@
    */
 .influencer-tab{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.influencer-tab>button{
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 3rem;
+  background-color: #f8971d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.influencer-tab>button:hover{
+  background: transparent;
+  border: 2px solid #f8971d;
+  transform: scaleX(1.1);
+  transition: .1s ease-in-out;
+}
+
+.brand-tab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-tab>button{
+  margin: 0;
+  padding: 0;
+  width: 15rem;
+  height: 4rem;
+  margin-top: 3rem;
+  background-color: #f8971d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.brand-tab>button:hover{
+  background: transparent;
+  border: 2px solid #f8971d;
+  transform: scaleX(1.1);
+  transition: .1s ease-in-out;
+}
+
+.toggle-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -13,7 +66,7 @@
 
 .tabs1 {
 
- padding: 15px;
+ padding: 10px;
  text-align: center;
  cursor: pointer;
  box-sizing: content-box;
@@ -21,10 +74,10 @@
  outline: none;
 }
 
-.tabs1:hover{
+/* .tabs1:hover{
  background-color: #f8971d;
  color: white;
-}
+} */
 
 .content1 {
  width: 100%;
@@ -147,7 +200,7 @@ ul {
 .contact form .input1,
 .contact form textarea {
   width: 100%;
-  padding: 1em;
+  padding: 0;
   border: solid 1px #627EDC;
   border-radius: 4px;
   /* margin: 1rem; */

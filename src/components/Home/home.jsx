@@ -11,6 +11,7 @@ import Newsletter from './Newsletter';
 import {Link} from 'react-router-dom'
  import Headline from './headline.jsx'
  import Toggle from './Toggle';
+ import Zoom from 'react-reveal/Zoom'
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
       <div className=" video-container">
       <div className="main-heading-wrapper">
             <img src={wall} alt="wall" />
-            <h1 className="main-heading slide">A Modern Marketing & Technology Company</h1>
+            <h1 className="main-heading slide"><Zoom>A Modern Marketing & Technology Company</Zoom></h1>
             {/* <span>Done Right</span></h1> */}
             {/* <p className="main-para slide">As an Influencer Marketing Agency, we create the most viral,<br/> 
             captivating & ROI-focused social media influencer<br/> campaigns for brands globally.</p> */}
@@ -37,11 +38,9 @@ const Home = () => {
 
         {/* <Socialsection/> */}
         <Toggle/>
-<Headline/>
+        <Headline/>
         <Carousel/>
-
         <Clients/> 
-
         <Newsletter/>
     </>
   );

@@ -41,12 +41,12 @@ export default class Footer extends Component {
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>Jetalpur Road</span>Vadodara , Gujarat</p>
+					<p><span>1007 One Indiabulls Park , Jetalpur Road</span>Vadodara , Gujarat</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+91783812132</p>
+					<p>9723232454</p>
 				</div>
 
 				<div>
