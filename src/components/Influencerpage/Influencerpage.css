@@ -4,7 +4,7 @@
     animation: gradient 10s ease infinite;
     padding: 8rem 8rem;
     margin: 5rem;
-    background-image: url("https://www.bing.com/images/blob?bcid=SyORRelREiYEsmElIcPiUzmWhr-N.....60");
+    background-image: url("https://images.unsplash.com/photo-1652785276421-0e2362eb6a4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80");
 }
 
 @keyframes gradient {
