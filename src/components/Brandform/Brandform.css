@@ -140,6 +140,7 @@
             width: calc( 100vw - 4rem );
             margin: 0;
             height: auto;
+            padding: 5rem 3rem 5rem 3rem;
         }
         .infy-heading{
             height: auto;
