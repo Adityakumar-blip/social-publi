@@ -87,14 +87,14 @@ export default class influencer extends Component {
             <div className="service-container">
               <div className="double-container">
               <div className="service-section black"><Link to="/marketing" style={{color:"white", textDecoration:"none"}} ><h1>INFLUENCER MARKETING</h1></Link></div>
-                <div className="service-section grey"><h1> SOCIAL EXPERIMENTAL</h1></div>
+                <div className="service-section grey"><Link to="/construction" style={{color:"white", textDecoration:"none"}} ><h1> SOCIAL EXPERIMENTAL</h1></Link></div>
 
               </div>
 
 
               <div style={{ width: '100%', height: '6px', backgroundColor: '#0E7895' }}></div>
               <div className=" single-container">
-                <div className="service-section middle"><h1> TRACKING & MEASUREMENT WITH SocialSOFT™</h1><p>Coming soon</p></div>
+                <div className="service-section middle"><Link to="/construction" style={{color:"black", textDecoration:"none"}} ><h1> TRACKING & MEASUREMENT WITH SocialSOFT™</h1></Link><p>Coming soon</p></div>
               </div>
               <div style={{ width: '100%', height: '6px', backgroundColor: '#0E7895' }}></div>
 
@@ -107,7 +107,7 @@ export default class influencer extends Component {
 
               <div className="double-container">
                 <div className="service-section black"><h1>BLOCKCHAIN /W3</h1></div>
-                <div className="service-section grey">  <h1 className="service-lk"><Link to="/B2c" style={{textDecoration:"none", color:"white"}} >B2B</Link></h1></div>
+                <div className="service-section grey">  <h1 className="service-lk"><Link to="/construction" style={{textDecoration:"none", color:"white"}} >B2B</Link></h1></div>
 
               </div>
 

@@ -34,9 +34,14 @@ p{
     margin-bottom: 0;
 }
 
-.card .campaign-img{
-    border-radius: 10px 10px 0 0;
-    height:50vh;
+.campaign-img{
+    width: 60%;
+    height: 100%;
+}
+
+.campaign-img>img{
+    width: 80%;
+    height: 100%;
 }
 
 .card .wrap{
@@ -49,6 +54,12 @@ p{
     background-color: rgb(255, 231, 125);
     padding: 1rem 0;
 }
+
+.campaign-container{
+    padding: 2rem 3rem;
+}
+
+
 
 .box {
     float: Left;

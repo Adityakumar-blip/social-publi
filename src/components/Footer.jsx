@@ -51,7 +51,7 @@ export default class Footer extends Component {
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">influencermarketing@soicalpubli.co.in</a></p>
+					<p><a href="mailto:influencermarketing@soicalpubli.co.in" style={{color:'white'}}>influencermarketing@soicalpubli.co.in</a></p>
 				</div>
 
 			</div>
@@ -67,8 +67,8 @@ export default class Footer extends Component {
 
 					<a className='face' href="#"><i class="fa fa-facebook"></i></a>
 					<a className='twitt' href="#"><i class="fa fa-twitter"></i></a>
-					<a className='linkd' href="#"><i class="fa fa-linkedin"></i></a>
-					<a className='insta' href="#"><i class="fa fa-instagram"></i></a>
+					<a className='linkd' href="https://www.linkedin.com/company/socialpubli-influencer-marketing-company/"><i class="fa fa-linkedin"></i></a>
+					<a className='insta' href="https://instagram.com/socialpublindia?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
 
 				</div>
 

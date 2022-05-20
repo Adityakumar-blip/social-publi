@@ -1,7 +1,9 @@
 import React from 'react';
- import img1 from '../image/car1.jpg'
-import img2 from '../image/car2.jpg'
-import img3 from '../image/car3.jpg'
+ import img1 from '../image/1.jpg'
+import img2 from '../image/2.jpg'
+import img3 from '../image/3.jpg'
+import img4 from '../image/4.jpg'
+import img5 from '../image/5.jpg'
 import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,17 +13,17 @@ import Zoom from 'react-reveal/Zoom'
 export default class extends React.Component {
   render() {
 
-    // const setting = {
+    const setting = {
       
-    //   infinite: true,
-    //   speed: 500,
-    //   slidesToShow: 1,
-    //   slidesToScroll: 1,
-    //   autoplay:true,
-    //     autoplaySpeed:2000,
-    //   accessibility:true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      autoplay:true,
+        autoplaySpeed:2000,
+      accessibility:true,
      
-    // };
+    };
 
     return (
       <>
@@ -31,72 +33,25 @@ export default class extends React.Component {
           <h1>Our Work In Action</h1>
           <p>80+ leading brands & their agencies leverage our influencer network across the marketing cycle – for research, sampling, content creation & distribution, driving engagement & conversions, at scale.</p>
           <div className="campaign-container">
-          <div class="card campaign-card"  >
-            <img src={img1} class="card-img-top campaign-img" alt="..."/>
-            <div class="campaign-body wrap">
-            <p class="campaign-text">Al Ziba Cares</p>
+          <div>
+        <Slider {...setting}>
+          <div className='campaign-img'>
+            <img src={img1} alt="img1" />
           </div>
-            <div className='campaign-info'>
-            <div class="clearfix">
-  <div class="box" >
-  <p className='para-no'>67</p>
-  <p>campus influencer</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>67K</p>
-  <p>Reach</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>8.7K</p>
-  <p>Social Media Engagement</p>
-  </div>
-</div>
-            </div>
+          <div className='campaign-img'>
+            <img src={img2} alt="img1" />
           </div>
-          <div class="card campaign-card"  >
-            <img src={img2} class="card-img-top campaign-img" alt="..."/>
-            <div class="campaign-body wrap">
-            <p class="campaign-text">Vasu Healthcare</p>
+          <div className='campaign-img'>
+            <img src={img3} alt="img1" />
           </div>
-          <div className='campaign-info'>
-            <div class="clearfix">
-  <div class="box" >
-  <p className='para-no'>67</p>
-  <p>campus influencer</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>67K</p>
-  <p>Reach</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>8.7K</p>
-  <p>Social Media Engagement</p>
-  </div>
-</div>
-            </div>
+          <div className='campaign-img'>
+            <img src={img4} alt="img1" />
           </div>
-          <div class="card campaign-card"  >
-            <img src={img3} class="card-img-top campaign-img" alt="..."/>
-            <div class="campaign-body wrap">
-            <p class="campaign-text">SodaG</p>
+          <div className='campaign-img'>
+            <img src={img5} alt="img1" />
           </div>
-          <div className='campaign-info'>
-            <div class="clearfix">
-  <div class="box" >
-  <p className='para-no'>67</p>
-  <p>campus influencer</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>67K</p>
-  <p>Reach</p>
-  </div>
-  <div class="box" >
-  <p className='para-no'>8.7K</p>
-  <p>Social Media Engagement</p>
-  </div>
-</div>
-            </div>
-          </div>
+        </Slider>
+      </div>
           </div>
         </div>
 

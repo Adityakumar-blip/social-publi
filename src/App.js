@@ -20,6 +20,7 @@ import Influencermarketing from './components/Influencermarketing/Influencermark
 import Performance from './components/Performance/Performance';
 import Creative from './components/Creative/Creative';
 import Possible from './components/Possible';
+import Construction from './components/Construction';
 
 function App() {  
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path='/performance' element={<Performance/>} />
             <Route path='/creative' element={<Creative/>} />
             <Route path='/possible' element={<Possible/>} />
+            <Route path='/construction' element={<Construction/>} />
             
 
             </Routes>

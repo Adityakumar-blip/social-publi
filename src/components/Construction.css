@@ -1,0 +1,28 @@
+.construction-container{
+    background-color: white;
+}
+
+.construction{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.construction>h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.construction-img{
+    width: 40%;
+    height: 50%;
+}
+
+.construction-img>img{
+    width: 100%;
+    height: 50%;
+}
