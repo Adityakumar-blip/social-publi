@@ -93,7 +93,7 @@ const Toggle = () => {
 
               <div className='col-md-4 col-sm-12'>
               <div className="testimonial-heading">
-                <h5>`VN Platform was born of Viral Nation’s need to change how digital content, influencers, creators and digital channels are used to drive demand for clients. It works because Viral Nation is the perfect testing ground where it has proven to boost productivity, economics and impact.``</h5>
+                <h5>`Socialpubli is india's fastest growing influencer marketing company. We use latest technologies and AI driven decisions to generate higher engagements. We use lots of data to run and track the campaign. Our decisions are precisely derived from the market trends & demands`</h5>
               </div>
               </div>
             </div>
