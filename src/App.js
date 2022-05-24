@@ -49,7 +49,7 @@ function App() {
             
 
             </Routes>
-        <LetsTalk/>
+        {/* <LetsTalk/> */}
         <Footer/>
     
         </Router>

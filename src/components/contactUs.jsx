@@ -6,6 +6,50 @@ const ContactUs = () => {
 
   const [active, setactive] = useState();
 
+  const [userData, setUserData] = useState({
+    name:"",
+    email:"",
+    number:"",
+    message:"",
+    });
+    
+    let name, value;
+    function postUserData(event) {
+      name = event.target.name;
+      value = event.target.value;
+  
+      setUserData({ ...userData, [name]:value })
+    }
+  
+    // connect to firebase
+    const submitData = async(event) => {
+      event.preventDefault();
+      const {name,
+      email,
+      number,
+      message,} = userData;
+      const res = await fetch(
+        'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/Contactus.json',{
+          method: "POST",
+          headers:{
+            "Content-Type": "application/json",
+          },
+          body:JSON.stringify({
+            name,
+            email,
+            number,
+            message,
+          }),
+        }
+        );
+  
+        if(res) {
+          alert("Data Stored")
+        }else {
+          alert("Please fill the Data")
+        }
+    };
+
   return (
     <>
     <section>
@@ -30,41 +74,45 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section>
-        <div className="Violet">
-          <div className="Violet-container">
-            <img src="" />
-            <div className='row g-0 Red-box'>
-              <div className='col-md-6 col-sm-12'>
-                <div className='Violet-body1'>
-                  <h1>Location</h1>
-                </div>
-              </div>
-              <div className='col-md-6 col-sm-12'>
-                <div className='Violet-body2'>
-                  
-                  <h1>Let’s connect</h1>
-                
-                <div className="Violet-dropdown">
-                <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    What's Your Role ?
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button">Media</button>
-    <button class="dropdown-item" type="button">Brand</button>
-    <button class="dropdown-item" type="button">Influencer/Creator</button>
-  </div>
+      <section className='form-container'>
+      <div class="container ">
+	<div class="row form-heading">
+			<h1>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style={{textAlign:"center"}}>We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container" method="POST">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name='name' value={userData.name} onChange={postUserData} required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" name='email' value={userData.email} onChange={postUserData} required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style={{float:"right"}}>
+					<input type="text" name='number' value={userData.number} onChange={postUserData} required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea name='message' value={userData.message} onChange={postUserData} required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn" onClick={submitData}>Send Message</div>
+			</div>
+	</div>
 </div>
-                </div>
-                {active === "FirstCard" && <Form title="1" />}
-                <Form title="2" />
-                <Form title="3" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </section>
 
          
