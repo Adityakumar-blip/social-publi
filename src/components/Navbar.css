@@ -26,7 +26,11 @@
     font-family: 'Lora',sans-serif;
 }
 
-.navbar li a:active{
+.active-link:active{
+    color: white;
+}
+
+.navbar li Link:active{
     color: red;
 }
 

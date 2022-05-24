@@ -34,31 +34,31 @@ const Navbar = () =>{
                 id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu"/>
                         <li className="nav-item">
-                        <Link className="nav-link active" 
+                        <Link className="nav-link active-link " 
                         aria-current="page" 
                         to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link active" to="/services">Services</Link>
+                        <Link className="nav-link " to="/services">Services</Link>
                         </li>
 
 
                         <li className="nav-item">
-                        <Link className="nav-link active" to="/influencer">Work</Link>
-                        </li>
-
-                        
-                        <li className="nav-item">
-                        <Link className="nav-link active" to="/Brands" >Brands</Link>
+                        <Link className="nav-link " to="/influencer">Work</Link>
                         </li>
 
                         
                         <li className="nav-item">
-                        <Link className="nav-link active" to="/tools" >Tools</Link>
+                        <Link className="nav-link " to="/Brands" >Brands</Link>
+                        </li>
+
+                        
+                        <li className="nav-item">
+                        <Link className="nav-link " to="/tools" >Tools</Link>
                         </li>
 
                         <li className="nav-item">
-                        <Link className="nav-link active" to="/About">About</Link>
+                        <Link className="nav-link" to="/About">About</Link>
                         </li>
 
                         <button type="button" className="contact-button">
